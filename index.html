@@ -8,16 +8,22 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body bgcolor="#dedec8">
-    <p> TODO: Update with brief but specific summary of each commit </p>
+    <h4>Commits to the Mozilla Firefox Web Browser Debugger:</h4>
     <ul>
       <li><a href="https://github.com/firefox-devtools/debugger/commit/62c8117f137f070f37440827038410773bf13aef">
-        QuickOpenModal</a>: Update sorting algorithm to limit results to 100 sources</li>
+        QuickOpenModal</a></li>
+        <p>Update sorting algorithm to limit results to 100 sources. Update the filter function used to display sources.  Update test file.</p>
       <li><a href="https://phabricator.services.mozilla.com/D36448">
-        ShortcutsModal</a>: Fix bug by preventing default behavior of `escape` key</li>
+        ShortcutsModal</a></li>
+        <p>Fix bug by preventing the console drawer from opening when the escape key is pressed to exit the ShortcutsModal component.  Update CSS.</p>
       <li><a href="https://phabricator.services.mozilla.com/D38198">
-        Sources Tabs</a>: Remove blackbbox from a source if a breakpoint is set</li>
+        Sources Tabs</a></li>
+        <p>Remove blackbox from a source if a breakpoint is set in the source tab.  Allow a breakpoint to be set on a source that is blackboxed. This will automatically remove black boxing from the source.  Added tests to re-inforce this behavior.</p>
       <li><a href="https://phabricator.services.mozilla.com/D32795">
-        ConditionalPanel React Component</a>: Fix and improve keyboard shortcut.  Add Jest tests and Mochitests.</li>
+        ConditionalPanel React Component</a></li>
+        <p>Fixed bug to set and load conditions for breakpoints when Conditional Panel is opened with keyboard shortcut.
+          Using CodeMirror API, set the shortcut to open the panel on the breakpoint that is closest to the cursor position
+          in the Editor Component. Composed new Jest and Mochitest files to test the improved functionality of the shortcut.</p>
       </ul>
   </body>
 </html>
