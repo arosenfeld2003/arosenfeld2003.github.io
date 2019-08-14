@@ -19,8 +19,11 @@
       <li><a href="https://phabricator.services.mozilla.com/D38198">
         Sources Tabs</a></li>
         <p>Remove blackbox from a source if a breakpoint is set in the source tab.  Allow a breakpoint to be set on a source that is blackboxed. This will automatically remove black boxing from the source.  Added tests to re-inforce this behavior.</p>
+      <li><a href="https://phabricator.services.mozilla.com/D41694">
+        Conditional and Logpoint Panel</a></li>
+        <p>Close Conditional/Logpoint Panel if user right-clicks another line in the gutter.  Fix buggy behavior by preventing multiple panels from being open at the same time.</p>
       <li><a href="https://phabricator.services.mozilla.com/D32795">
-        ConditionalPanel for Breakpoints</a></li>
+        Conditional Panel Keyboard Shortcut</a></li>
         <p>Fixed bug to set and load conditions for breakpoints when Conditional Panel is opened with keyboard shortcut.
           Using CodeMirror API, set the shortcut to open the panel on the breakpoint that is closest to the cursor position
           in the Editor Component. Composed new Jest and Mochitest files to test the improved functionality of the shortcut.</p>
