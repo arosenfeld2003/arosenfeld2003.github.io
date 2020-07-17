@@ -29,6 +29,9 @@ body {
 .nav-link:hover {
   color: rgb(17, 8, 8);
 }
+.navbar-collapse {
+  color: black;
+}
 li {
   line-height: 2.0;
 }
