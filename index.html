@@ -2,13 +2,31 @@
 <meta charset="UTF-8">
 <html>
   <head>
-    <div class="header">
-      <h1>Alex Rosenfeld: Open Source Code Contributions</h1>
-      <h2><a href="https://github.com/arosenfeld2003">GitHub</a></h2>
-      <link rel="stylesheet" href="./styles.css">
-    </div>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
   </head>
-  <body bgcolor="#dedec8" >
+  <body>
+    <header class="b-site-header">
+      <nav class="navbar navbar-expand-md">
+        <img src="images/Informal-headshot-150x150.jpg" class="img-thumbnail">
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navigation">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <h4>Commits to the Mozilla Firefox Web Browser Debugger:</h4>
     <ul>
       <li><a href="https://github.com/firefox-devtools/debugger/commit/62c8117f137f070f37440827038410773bf13aef">
@@ -36,5 +54,7 @@
         Pretty-Print a source with a URL value of null</a></li>
         <p>Use the source ID to create a pretty-printed source if the source URL value is null</p>
     </ul>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
