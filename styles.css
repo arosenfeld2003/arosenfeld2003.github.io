@@ -47,6 +47,11 @@ a:hover {
   color: #57dbe6;
 }
 .email {
+  text-align: center;
+  display:    inline-table;
+  position:   relative;
+}
+.email-image {
   width: 20%;
 }
 .title {
