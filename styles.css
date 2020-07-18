@@ -30,6 +30,7 @@ body {
   color: rgb(17, 8, 8);
 }
 .navbar-collapse {
+  font-size: 1.5em;
   color: black;
 }
 li {
@@ -44,4 +45,10 @@ h1 {
 }
 a:hover {
   color: #57dbe6;
+}
+.email {
+  width: 20%;
+}
+.title {
+  text-align: center;
 }
