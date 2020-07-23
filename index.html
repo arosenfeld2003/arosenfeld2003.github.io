@@ -1,49 +1,138 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
 <html>
   <head>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
+    <div class="container-small">
+      <div class="row">
+        <div class="col-sm">
+          <img src="images/Informal-headshot-150x150.jpg">
+        </div>
+        <div class="col-sm my-auto">
+          <h1>Alex Rosenfeld</h1>
+        </div>
+        <div class="col-sm my-auto">
+          <a href="mailto:arosenfeld2003@mac.com" class="email"><img src="images/email.png" class="email-image"></a>
+        </div>
+      </div>
+    </div>
     <header class="b-site-header">
       <nav class="navbar navbar-expand-md">
-        <img src="images/Informal-headshot-150x150.jpg" class="img-thumbnail">
-        <p class="navbar-collapse">Alex Rosenfeld</p>
-        <a href="mailto:arosenfeld2003@mac.com" class="email"><img src="images/email.png" class="email-image"></a>
+        <div class="dropdown">
+          <button class="btn btn-secondary ml-1 mr-1 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Open Source Contributions: Mozilla Firefox
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="https://phabricator.services.mozilla.com/D32795">
+              Conditional Panel Keyboard Shortcut</a>
+            <a class="dropdown-item" href="https://github.com/firefox-devtools/debugger/commit/62c8117f137f070f37440827038410773bf13aef">
+              QuickOpenModal</a>
+            <a class="dropdown-item" href="https://phabricator.services.mozilla.com/D36448">
+              ShortcutsModal</a>
+            <a class="dropdown-item" href="https://phabricator.services.mozilla.com/D38198">
+              Sources Tabs</a>
+            <a class="dropdown-item" href="https://phabricator.services.mozilla.com/D41694">
+              Conditional and Logpoint Panel</a>
+            <a class="dropdown-item" href="https://phabricator.services.mozilla.com/D43326">
+              Disable Column Breakpoints With Shift-Click</a>
+            <a class="dropdown-item" href="https://phabricator.services.mozilla.com/D46634">
+              Pretty-Print a source with a URL value of null</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary mr-1 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Linux and C
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href=https://github.com/arosenfeld2003/qwasar-c-bootcamp/blob/master/my_cat.c>
+              Cat</a>
+            <a class="dropdown-item" href="https://github.com/arosenfeld2003/qwasar-c-bootcamp/blob/master/my_printf.c">
+              Printf</a>
+            <a class="dropdown-item" href="https://github.com/arosenfeld2003/qwasar-c-bootcamp/tree/master/my_ls">
+              ls</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary mr-1 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Database: Mock SQL
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href=https://github.com/arosenfeld2003/qwasar-sql/blob/master/my_redis_class.rb>
+              RedisClas</a>
+            <a class="dropdown-item" href="https://github.com/arosenfeld2003/qwasar-sql/blob/master/my_select_query.rb">
+              SelectQuery</a>
+            <a class="dropdown-item" href="https://github.com/arosenfeld2003/qwasar-sql/blob/master/my_sqlite_request.rb">
+              sqlite_request</a>
+            <a class="dropdown-item" href="https://github.com/arosenfeld2003/qwasar-sql/blob/master/my_sqlite_cli.rb">
+              sqlite_cli</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary mr-1 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Basecamp: Clone of the popular project management app
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href=https://github.com/arosenfeld2003/basecamp>
+              Basecamp</a>
+          </div>
+        </div>
       </nav>
     </header>
-    <div class="title">
-      <h3>Open Source Contributions</h5>
-      <h5>Mozilla Firefox Web Browser Debugger</h4>
-    </div>
-    <ul>
-      <li><a href="https://github.com/firefox-devtools/debugger/commit/62c8117f137f070f37440827038410773bf13aef">
-        QuickOpenModal</a></li>
-        <p>Update sorting algorithm to limit results to 100 sources. Update the filter function used to display sources.  Update test file.</p>
-      <li><a href="https://phabricator.services.mozilla.com/D36448">
-        ShortcutsModal</a></li>
-        <p>Fix bug by preventing the console drawer from opening when the escape key is pressed to exit the ShortcutsModal component.  Update CSS.</p>
-      <li><a href="https://phabricator.services.mozilla.com/D38198">
-        Sources Tabs</a></li>
-        <p>Remove blackbox from a source if a breakpoint is set in the source tab.  Allow a breakpoint to be set on a source that is blackboxed. This will automatically remove black boxing from the source.  Added tests to re-inforce this behavior.</p>
-      <li><a href="https://phabricator.services.mozilla.com/D41694">
-        Conditional and Logpoint Panel</a></li>
-        <p>Close Conditional/Logpoint Panel if user right-clicks another line in the gutter.  Fix buggy behavior by preventing multiple panels from being open at the same time.</p>
-      <li><a href="https://phabricator.services.mozilla.com/D32795">
-        Conditional Panel Keyboard Shortcut</a></li>
-        <p>Fixed bug to set and load conditions for breakpoints when Conditional Panel is opened with keyboard shortcut.
-          Using CodeMirror API, set the shortcut to open the panel on the breakpoint that is closest to the cursor position
-          in the Editor Component. Composed new Jest and Mochitest files to test the improved functionality of the shortcut.</p>
-      <li><a href="https://phabricator.services.mozilla.com/D43326">
-        Disable Column Breakpoints With Shift-Click</a></li>
-        <p>If user shift-clicks an active column breakpoint, disable the breakpoint as would be expected.
-          Fix previous bug which caused column breakpoint to be deleted unexpectedly on shift-click.</p>
-      <li><a href="https://phabricator.services.mozilla.com/D46634">
-        Pretty-Print a source with a URL value of null</a></li>
-        <p>Use the source ID to create a pretty-printed source if the source URL value is null</p>
-    </ul>
-    <script src="jquery-3.5.1.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <div class="container-fluid ml-2">
+      <div class="watchandcode">
+        <h2>Software Engineering Training</h2>
+        <p>While studying at <a href="https://watchandcode.com/">Watch And Code</a>, I embraced the process of learning software engineering primarily by reading open source codebases.
+          The curriculum is designed to guide students from complete beginner to contributing in a meaningful way to open source projects.
+          For about six months I worked as an active contributor to the
+          devtools/debugger of Mozilla Firefox Web Browser.
+          It was a great experience to have my code reviewed by Mozilla engineers, and to digest and contribute to
+          such a massive codebase.  Tackling this modern Javascript codebase I became famaliar with React and Redux, learned to use
+          Mercurial for version control, and wrote tests using Jest and Mochitest frameworks.
+        </p>
+      </div>
+      <div class="qwasar">
+        <p>
+          I am curently studying as a Junior Software Engineer Fellow at <a href="https://qwasar.io/">Qwasar Silicon Valley</a>
+          where I have learned numerous languages and frameworks, with a focus on the fundamentals of software engineering.
+          By building many small projects which piggyback each other,
+          I have gained an increased understanding of larger patterns in software architecture.  There is an emphasis on peer code reviews
+          (both giving and recieving), working both individually and as part of a small team,
+          and helping others by making presentations about specific concepts or previously completed projects.
+        </p>
+      </div>
+      <h2>Biography</h2>
+      <p>
+        For fifteen years I enjoyed a successful career as an orchestral musician.
+        I held positions playing French Horn with many orchestras around the country,
+        including the Rochester and Louisiana Philharmonic Orchestras,
+        Sarasota Opera Orchestra, and San Francisco Chamber Orchestra.
+        I appeared regularly onstage with numerous other groups around the San Francisco Bay Area,
+        across the United States and internationally.
+        This included frequent performing and touring as an extra with the San Francisco Symphony,
+        participating in various festival orchestras, as well as solo and chamber music engagements.
+        I also held teaching positions at Centre College in Danville KY, and San Jose State University in San Jose, CA.
+      </p>
+      <p>
+        In 2017 I was diagnosed with Task Specific Focal Dystonia, which effectively ended my performing career.
+        I worked for one year as a professional brewer, then made the decision to immerse myself in the study of software engineering.
+        I currently work as an Admin Manager for Awesome Pawsome, where I enjoy spending time with clients (human and canine) and helping
+        manage the complexities of running a thriving small business in the heart of San Francisco.
+        I am pasionate about learning and pursuing a lifelong continuous growth mindset, and I'm eager to begin working profesionally as a developer.
+      </p>
+      </p>
+        When I'm not immersed in learning to code, I enjoy reading and movies, and have completed several marathons and two short triathlons.
+      </p>
+    </container>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
