@@ -2,6 +2,13 @@ body {
   background-color: #211e1e;
   color: #cdc0bf;
 }
+.top {
+  background-image: url('images/skyline02.jpeg');
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  color: black;
+}
 /*--- navigation bar ---*/
 .b-site-header {
   background-color: #dad0cf;
@@ -40,16 +47,13 @@ p {
   margin: 10px 0;
   padding: 5px;
 }
-h1 {
-  color: #e2e2b6
-}
 a:hover {
   color: #57dbe6;
 }
 .email {
   text-align: center;
-  display:    inline-table;
   position:   relative;
+  color: rgb(247, 217, 217);
 }
 .email-image {
   width: 20%;
