@@ -3,11 +3,11 @@ body {
   color: #cdc0bf;
 }
 .top {
-  background-image: url('images/skyline02.jpeg');
+  background-image: url('images/skyline.jpeg');
   width: 100%;
   height: auto;
   background-size: cover;
-  color: black;
+  color: rgb(212, 171, 171);
 }
 /*--- navigation bar ---*/
 .b-site-header {
@@ -56,7 +56,7 @@ a:hover {
   color: rgb(247, 217, 217);
 }
 .email-image {
-  width: 20%;
+  width: 10%;
 }
 .title {
   text-align: center;
