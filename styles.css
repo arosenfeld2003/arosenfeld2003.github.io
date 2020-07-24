@@ -51,6 +51,7 @@ a:hover {
   color: #57dbe6;
 }
 .email {
+  display: block;
   text-align: center;
   position:   relative;
   color: rgb(247, 217, 217);
