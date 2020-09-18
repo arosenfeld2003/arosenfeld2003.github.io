@@ -1,139 +1,444 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta content="Alex Rosenfeld Dev Portfolio" property="og:title" />
-    <meta property="og:image" content="images/IMG_0144 2.jpeg">
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Portfolio/Resume Theme for Developers</title>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bootstrap 4 Portfolio/Resume Theme for Developers">
+  <meta name="author" content="Xiaoying Riley at 3rd Wave Media: Modified by Alex Rosenfeld">
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon_io/site.webmanifest">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+  
+  <!-- FontAwesome JS -->
+  <script defer src="assets/fontawesome/js/all.js"></script>
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+  
+  <!-- github calendar css -->
+  <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
+  <!-- github activity css -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+  <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="./styles.css">
-  </head>
-  <body>
-    <div class="container-small top">
-      <div class="row">
-        <div class="col-sm">
-          <img class="img-thumbnail img-responsive" style="width: 200px" style="height: 200px" src="images/IMG_0144 2.jpeg" alt="Headshot">
-        </div>
-        <div class="col-md-4 my-auto">
-          <h1>Alex Rosenfeld</h1>
-          <a href="mailto:arosenfeld2003@mac.com" class="email my-auto"><img src="images/email2.png" class="email-image"> Contact</a>
-        </div>
-        <div class="col-sm my-auto">
-        </div>
-      </div>
-    </div>
-    <header class="b-site-header">
-      <nav class="navbar navbar-expand-md">
-        <div class="dropdown">
-          <button class="btn btn-secondary ml-1 mr-1 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Open Source Contributions: Mozilla Firefox
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1543261">
-              Conditional Panel Keyboard Shortcut</a>
-            <a class="dropdown-item" href="https://github.com/firefox-devtools/debugger/pull/8134">
-              QuickOpenModal</a>
-            <a class="dropdown-item" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1561577">
-              ShortcutsModal</a>
-            <a class="dropdown-item" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1565011">
-              Allow Breakpoint to Un-Blackbox Sources</a>
-            <a class="dropdown-item" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1573241">
-              Conditional and Logpoint Panel</a>
-            <a class="dropdown-item" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1574053">
-              Disable Column Breakpoints With Shift-Click</a>
-            <a class="dropdown-item" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1579994">
-              Pretty-Print a source with a URL value of null</a>
-          </div>
-        </div>
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" target="_blank" href="https://github.com/arosenfeld2003/qwasar-c-bootcamp">Linux/C</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://github.com/arosenfeld2003/qwasar-sql">Database</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://github.com/arosenfeld2003/testingJavascriptArrayMethods">Javascript Array Methods</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://github.com/arosenfeld2003/ruby">Ruby</a>
-          </li>
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <!-- ******HEADER****** -->
+  <header class="header">
+    <div class="container clearfix">
+      <img class="profile-image img-thumbnail img-responsive float-left rounded-circle" style="width: 200px" style="height: 200px" src="assets/images/profile.png" alt="profile image" />
+      <div class="profile-content float-left">
+        <h1 class="name">Alex Rosenfeld</h1>
+        <h2 class="desc">Developer Portfolio</h2>
+        <ul class="social list-inline">
+          <li class="list-inline-item"><a href="https://www.linkedin.com/in/alexdrosenfeld/ target="_blank""><i class="fab fa-linkedin-in" target="_blank"></i></a></li>
+          <li class="list-inline-item"><a href="https://github.com/arosenfeld2003" target="_blank"><i class="fab fa-github-alt" target="_blank"></i></a></li>
+          <li class="list-inline-item"><a href="https://stackoverflow.com/users/8881684/alex" target="_blank"><i class="fab fa-stack-overflow" target="_blank"></i></a></li>
+          <li class="list-inline-item"><a href="https://twitter.com/axlerosenfeld" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <!-- <li class="list-inline-item last-item"><a href="https://codepen.io/arosenfeld2003" target="_blank"><i class="fab fa-codepen"></i></a></li> -->
         </ul>
-        <div class="dropdown">
-          <button class="btn btn-secondary ml-1 mr-1 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Web Applications
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" target="_blank" href="https://github.com/arosenfeld2003/basecamp">Basecamp</a>
-            <a class="dropdown-item" target="_blank" href="https://github.com/arosenfeld2003/shoppies">Shoppies</a>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div class="container-fluid ml-2">
-      <div class="watchandcode">
-        <h2>Software Engineering Training</h2>
-        <p>While studying at <a href="https://watchandcode.com/">Watch And Code</a>, I embraced the process of learning software engineering primarily by reading open source codebases.
-          The course is designed to guide students from complete beginner to contributing in a meaningful way to open source projects.
-          After finishing the core curriculum, I spent about six months as an active contributor to the
-          devtools/debugger of Mozilla Firefox Web Browser.
-          It was a great experience to have my code reviewed by Mozilla engineers, and to digest and contribute to
-          such a massive codebase.  Tackling this modern Javascript codebase I became famaliar with React and Redux, learned to use
-          Mercurial for version control, and wrote tests using Jest and Mochitest frameworks.
-        </p>
-      </div>
-      <div class="qwasar">
-        <p>
-          I am currently a Software Engineer Fellow at <a href="https://qwasar.io/">Qwasar Silicon Valley</a>
-          where I have learned numerous languages and frameworks, with a focus on the fundamentals of software engineering,
-          including data structures and algorithms.
-          By building many small projects which piggyback each other,
-          I have gained an increased understanding of larger patterns in software architecture.  There is an emphasis on giving and receiving peer code reviews,
-          working both individually and as part of a small team,
-          and helping others by making presentations about specific concepts or previously completed projects.
-        </p>
-      </div>
-      <h2>Biography</h2>
-      <p>
-        For fifteen years I enjoyed a successful career as an orchestral musician.
-        I held positions playing French Horn with numerous groups across the United States,
-        including the Rochester and Louisiana Philharmonic Orchestras,
-        Sarasota Opera Orchestra, and San Francisco Chamber Orchestra.
-        I had the privelege to perform and tour frequently with the San Francisco Symphony,
-        and participated in many recording sessions, solo, chamber music, and festival performances.
-        I also held teaching positions at Centre College and San Jose State University.
-      </p>
-      <p>
-        In 2017 I was diagnosed with Task Specific Focal Dystonia, which effectively ended my performing career.
-        I worked for one year as a professional brewer, then made the decision to immerse myself in the study of software engineering.
-        I currently work as an Admin Manager for Awesome Pawsome, where I enjoy spending time with clients (human and canine) and helping
-        manage the complexities of running a thriving small business in the heart of San Francisco.
-        I am passionate about learning and pursuing a lifelong continuous growth mindset, and I'm eager to begin working professionally as a developer.
-      </p>
-      <p>
-        When I'm not studying code, I enjoy reading, movies, brewing beer, and distance running.
-      </p>
-      <div id="footer">
-        <div class="container text-center">
-          <p class="text-muted credit" style="color:#fff">Alex Rosenfeld @2020</p>
-        </div>
-      </div>
-    </container>
+      </div><!--//profile-->
+      <a class="btn btn-cta-primary float-right" href="mailto:arosenfeld2003@mac.com" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>
+    </div><!--//container-->
+  </header><!--//header-->
 
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
-</html>
+  <div class="container sections-wrapper">
+    <div class="row">
+      <div class="primary col-lg-8 col-12">
+        <section class="about section">
+          <div class="section-inner shadow-sm rounded">
+            <h2 class="heading">About Me</h2>
+              <div class="content">
+                <p>
+                  I love building tools that help individuals and businesses improve their workflows and outcomes.
+                  I am currently a Software Engineer Fellow at Qwasar Silicon Valley
+                  where I have built projects in numerous languages and frameworks,
+                  with a focus on the fundamentals of software architecture.  Previously
+                  I was a student at Watch And Code, where I embraced the process of learning
+                  software engineering primarily by reading open source codebases.  After
+                  finishing the core curriculum, I spent about six months as an active
+                  contributor to the devtools/debugger of Mozilla Firefox Web Browser.  Previously
+                  I was an orchestral musician (French Horn), performing with orchestras across
+                  the United States and abroad.  When I'm not studying code, I enjoy
+                  reading, movies, brewing beer, camping and distance running.
+                </p>
+              </div><!--//content-->
+            </div><!--//section-inner-->
+          </section><!--//section-->
+
+          <section class="latest section">
+            <div class="section-inner shadow-sm rounded">
+              <h2 class="heading">Latest Projects</h2>
+                <div class="content">
+                  <div class="item featured text-center">
+                    <div class="featured-image has-ribbon">
+                      <a href="https://github.com/arosenfeld2003/basecamp" target="_blank">
+                        <img class="img-thumbnail project-image rounded shadow-sm" src="assets/images/projects/basecamp2.png" alt="project name" />
+                      </a>
+                      <div class="ribbon">
+                        <div class="text">New</div>
+                      </div>
+                    </div>
+
+                      <h3 class="title mb-3"><a href="https://github.com/arosenfeld2003/basecamp" target="_blank">my_basecamp</a></h3>
+
+                      <div class="desc text-left">
+                        <p>A clone of the popular project management app Basecamp built with Ruby On Rails. Users can create an authenticated account with multiple projects. Projects can have many members (with varying permissions), discussion threads (with sub-threads), attachments (text or image files), and tasks (with sub-tasks).</p>
+                      </div><!--//desc-->
+                    </div><!--//item-->
+                    <hr class="divider" />
+                    <div class="item row">
+                      <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/tetris" target="_blank">
+                        <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/tetris.jpg" alt="project name" />
+                      </a>
+                      <div class="desc col-md-8 col-12">
+                        <h3 class="title"><a href="https://github.com/arosenfeld2003/basecamp" target="_blank">my_tetris</a></h3>
+                        <p class="mb-2">Recreating Tetris was a really fun way to learn about game architecture, while also focusing on the fundamentals of modern Javascript.  This is the first game I ever built, and I really enjoyed the experience.</p>
+                        <p><a class="more-link" href="https://github.com/arosenfeld2003/basecamp" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                      </div><!--//desc-->
+                    </div><!--//item-->
+
+                    <div class="item row">
+                      <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/shoppies" target="_blank">
+                        <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/shoppies.png" alt="project name" />
+                      </a>
+                      <div class="desc col-md-8 col-12">
+                        <h3 class="title"><a href="https://github.com/arosenfeld2003/shoppies" target="_blank">Shoppies - OMDB API Query</a></h3>
+                        <p class="mb-2">I created this web app for the Shopify Web Developer Intern Challenge. Users can search the OMDB database for their favorite movies, and nominate up to five for a Shoppie award.</p>
+                        <p><a class="more-link" href="https://github.com/arosenfeld2003/shoppies" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                      </div><!--//desc-->
+                    </div><!--//item-->
+
+                      <div class="item row">
+                      <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/qwasar-sql" target="_blank">
+                        <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/sql.jpg" alt="project name" />
+                      </a>
+                      <div class="desc col-md-8 col-12">
+                        <h3 class="title"><a href="https://github.com/arosenfeld2003/qwasar-sql" target="_blank">my_sqlite</a></h3>
+                        <p class="mb-2">A group of small projects completed in order to understand SQL and databases, specifically related to building web apps using Ruby on Rails.</p>
+                        <p><a class="more-link" href="https://github.com/arosenfeld2003/qwasar-sql" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                      </div><!--//desc-->
+                    </div><!--//item-->
+
+                    <div class="item row">
+                      <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/qwasar-c-bootcamp/tree/master/my_ls" target="_blank">
+                        <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/ls.jpg" alt="project name" />
+                      </a>
+                      <div class="desc col-md-8 col-12">
+                        <h3 class="title"><a href="https://github.com/arosenfeld2003/qwasar-c-bootcamp/tree/master/my_ls" target="_blank">my_ls</a></h3>
+                        <p class="mb-2">my_ls my_ls behaves similarly to the linux ls command. Files are stored in a linked list and organized using merge-sort.  It was built as part of a series of exercises to learn C and linux programming.</p>
+                        <p><a class="more-link" href="https://github.com/arosenfeld2003/qwasar-c-bootcamp" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                      </div><!--//desc-->
+                    </div><!--//item-->
+                    <div class="item row">
+                      <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/testingJavascriptArrayMethods" target="_blank">
+                        <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/jsarrays.jpg" alt="project name" />
+                      </a>
+                      <div class="desc col-md-8 col-12">
+                        <h3 class="title"><a href="https://github.com/arosenfeld2003/testingJavascriptArrayMethods" target="_blank">JS Array Methods</a></h3>
+                        <p class="mb-2">My versions of the native JS array methods built from scratch, using a simple testing framework.  This was a fantastic way to practice TDD while familiarizing myself with the basics of Javascript.</p>
+                        <p><a class="more-link" href="https://github.com/arosenfeld2003/testingJavascriptArrayMethods" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                      </div><!--//desc-->
+                    </div><!--//item-->
+                    <a class="btn btn-cta-secondary" href="https://github.com/arosenfeld2003">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
+                  </div><!--//content-->
+                </div><!--//section-inner-->
+              </section><!--//section-->
+
+              <section class="experience section">
+                <div class="section-inner shadow-sm rounded">
+                  <h2 class="heading">Experience</h2>
+                  <div class="content">
+                    <div class="item">
+                      <h3 class="title">Software Engineer Fellow - <span class="place"><a href="https://qwasar.io/">Qwasar Silicon Valley</a></span> <span class="year">(2019 - Present)</span></h3>
+                      <p>Working both individually and as part of a small team, I built many projects using numerous languages and frameworks, with a constant focus on the fundamentals of software engineering and architecture.  I gave and revieved numerous peer code reviews, and made presentations to colleagues about specific concepts or previously completed projects. </p>
+                    </div><!--//item-->
+                    <div class="item">
+                        <h3 class="title">Open Source Contributor - <span class="place"><a href="https://firefox-dev.tools/">Mozilla Firefox</a></span> <span class="year">(2019)</span></h3>
+                        <p>As a contributor to the devtools/debugger of Mozilla Firefox Web Browser, my code was reviewed and accepted by Mozilla engineers.
+                            I learned to digest and contribute to a large, complex modern Javascript codebase (React & Redux), worked with Mercurial (version control), and tools/libraries such as Flow and Codemirror.  I also wrote unit tests for my code using Jest and Mochitest frameworks.</p>
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="title">Student Software Engineer - <span class="place"><a href="https://watchandcode.com/">Watch & Code</a></span> <span class="year">(2018 - 2019)</span></h3>
+                        <p>Learned core concepts of software engineering, primarily by reading open source codebases. Projects include removing jQuery from a todo list so that it's just plain JavaScript, modifying a simple testing framework, replicating the native JS Array methods from scratch using Test Driven Development, and creating a library loading system.</p>
+                    </div><!--//item-->
+                  </div><!--//content-->
+                </div><!--//section-inner-->
+              </section><!--//section-->
+              <!-- <section class="github section">
+                  <div class="section-inner shadow-sm rounded">
+                      <h2 class="heading">My GitHub</h2>
+                      <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget.
+                      
+                      <div id="github-graph" class="github-graph">
+
+                      </div><!--//github-graph-->
+
+                      <!-- <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://github.com/caseyscarborough/github-activity" target="_blank">GitHub Activity Stream</a> widget.
+                      <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->
+                      <!-- <div id="ghfeed" class="ghfeed">
+                      </div><!--//ghfeed-->
+
+                  <!-- </div><!--//secton-inner-->
+              <!-- </section><!--//section-->
+              </div><!--//primary-->
+              <div class="secondary col-lg-4 col-12">
+                <aside class="info aside section">
+                  <div class="section-inner shadow-sm rounded">
+                    <h2 class="heading sr-only">Basic Information</h2>
+                    <div class="content">
+                      <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>San Francisco, US</li>
+                        <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:arosenfeld2003@mac.com" target="_blank">arosenfeld2003@mac.com</a></li>
+                        <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://www.adrosenfeld.com/" target="_blank">https://www.adrosenfeld.com</a></li>
+                      </ul>
+                    </div><!--//content-->
+                  </div><!--//section-inner-->
+                </aside><!--//aside-->
+
+                <aside class="skills aside section">
+                  <div class="section-inner shadow-sm rounded">
+                    <h2 class="heading">Tech Stack</h2>
+                    <div class="content">
+                      <p class="intro">
+                          Some of the languages, libraries, and frameworks I have worked with include:</p>
+
+                      <div class="skillset">
+                        <div class="item">
+                          <h3 class="level-title">C &amp; Linux<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Built my own libraries of many standard C and Linux methods"><i class="fas fa-info-circle"></i></span></h3>
+                        </div><!--//item-->
+
+                        <div class="item">
+                          <h3 class="level-title">Javascript - React/Redux &amp; jQuery<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="While contributing to Mozilla Firefox (ES6, React/Redux), I also used JS libraries and tools such as Codemirror, Flow, and Typescript among others."><i class="fas fa-info-circle"></i></span></h3>
+                        </div><!--//item-->
+                        <div class="item">
+                          <h3 class="level-title">Ruby on Rails<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Built multiple web applications using Ruby On Rails, including my version of the project management app Basecamp."><i class="fas fa-info-circle"></i></span></h3>
+                        </div><!--//item-->
+                        <div class="item">
+                          <h3 class="level-title">HTML5, CSS, Bootstrap 4<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Styled many webpages and personal projects.  Also made UI/UX improvements to the devtools of Firefox."><i class="fas fa-info-circle"></i></span></h3>
+                        </div><!--//item-->
+                        <div class="item">
+                          <h3 class="level-title">Version Control: Git, Github, Mercurial<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Styled many webpages and personal projects.  Also made UI/UX improvements to the devtools of Firefox."><i class="fas fa-info-circle"></i></span></h3>
+                        </div><!--//item-->
+                        <div class="item">
+                          <h3 class="level-title">Testing: Jest, Karma, Mochitest, Tinytest<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Wrote numerous tests for Mozilla Firefox, including DOM snapshot testing."><i class="fas fa-info-circle"></i></span></h3>
+                        </div><!--//item-->
+                        <!-- <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> -->
+                      </div>
+                    </div><!--//content-->
+                  </div><!--//section-inner-->                 
+              </aside><!--//section-->
+
+              <!-- <aside class="testimonials aside section">
+                  <div class="section-inner shadow-sm rounded">
+                      <h2 class="heading">Testimonials</h2>
+                      <div class="content">
+                          <div class="item">
+                              <blockquote class="quote">
+                                  <p><i class="fas fa-quote-left"></i>James is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
+                              </blockquote>                
+                              <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>
+                          </div><!--//item-->
+
+                      <!--    <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p> -->
+                <!--      </div><!--//content-->
+              <!--    </div><!--//section-inner-->
+            <!--  </aside><!--//section-->
+
+        <!--      <aside class="languages aside section">
+                  <div class="section-inner shadow-sm rounded">
+                      <h2 class="heading">Languages</h2>
+                      <div class="content">
+                          <ul class="list-unstyled">
+                              <li class="item">
+                                  <span class="title"><strong>English:</strong></span>
+                                  <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                              </li><!--//item-->
+                <!--              <li class="item">
+                                  <span class="title"><strong>Spanish:</strong></span>
+                                  <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
+                              </li><!--//item-->
+              <!--            </ul>
+                      </div><!--//content-->
+              <!--   </div><!--//section-inner-->
+            <!--    </aside><!--//section-->
+            <!--
+              <aside class="blog aside section">
+                  <div class="section-inner shadow-sm rounded">
+                      <h2 class="heading">Latest Blog Posts</h2>
+                      <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">jQuery RSS plugin</a> to pull in your blog post feeds.</p>
+                      <div id="rss-feeds" class="content">
+
+                      </div><!--//content-->
+            <!--      </div><!--//section-inner-->
+            <!--  </aside><!--//section-->
+
+              <aside class="list music aside section">
+                <div class="section-inner shadow-sm rounded">
+                  <section class="projects section">
+                    <div class="section-inner shadow-sm rounded">
+                      <h2 class="heading">Open Source Contributions: Mozilla Firefox</h2>
+                      <div class="content">
+                        <div class="item">
+                          <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1543261" target="_blank">Conditional Panel</a> <span class="badge badge-theme">Description</span></h3>
+                          <p class="summary">Fix a bug and update the logic used when opening the breakpoint conditional panel using the keyboard shortcut.</p>
+                          <p><a class="more-link" href="https://phabricator.services.mozilla.com/D32795" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
+                        </div><!--//item-->
+                        <div class="item">
+                          <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1565011" target="_blank">Blackbox Sources</a> <span class="badge badge-theme">Description</span></h3>
+                          <p class="summary">Un-blackbox a source and add a breakpoint when the gutter is clicked.</p>
+                          <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/c226956f09f9" target="_blank"><i class="fas fa-external-link-alt"></i>Code  </a><a class="more-link" href="https://www.loom.com/share/06dc0fe5a5ff4487be282d406586bd29" target="_blank"><i class="fas fa-external-link-alt"></i>Video Walkthrough</a></p>
+                        </div><!--//item-->
+                        <div class="item">
+                          <h3 class="title"><a href="https://github.com/firefox-devtools/debugger/pull/8134" target="_blank">Quick Open Modal</a> <span class="badge badge-theme">Description</span></h3>
+                          <p class="summary">Limit the number of source file descriptors displayed in the Quick Open Modal to 100. </p>
+                          <p><a class="more-link" href="https://github.com/firefox-devtools/debugger/pull/8134/commits/8eb92ef02d9f8f5ecea7660c5abda361cd6481d6" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
+                        </div><!--//item-->
+                        <div class="item">
+                          <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1561577" target="_blank">Shortcuts Modal</a> <span class="badge badge-theme">Description</span></h3>
+                          <p class="summary">Fix bug when closing shortcuts modal with the escape key.</p>
+                          <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/33eca9689b58" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
+                        </div><!--//item-->
+                        <div class="item">
+                          <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1573241" target="_blank">Logpoint Panel</a> <span class="badge badge-theme">Description</span></h3>
+                          <p class="summary">Close previously opened conditional or logpoint panel on right-click to gutter.</p>
+                          <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/186c61bb0eff" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
+                        </div><!--//item-->
+                        <div class="item">
+                          <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1574053" target="_blank">Column Breakpoints</a> <span class="badge badge-theme">Description</span></h3>
+                          <p class="summary">Allow user to disable column breakpoints with shift-click.</p>
+                          <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/b7d1b3ab0fb5" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
+                        </div><!--//item-->
+                        <div class="item">
+                          <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1574053" target="_blank">Sources: Pretty-Print</a> <span class="badge badge-theme">Description</span></h3>
+                          <p class="summary">Show correct sources on pretty-print.</p>
+                          <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/cb54e53665de" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
+                        </div><!--//item-->
+    
+                      </div><!--//content-->
+                    </div><!--//section-inner-->
+                  </section><!--//section-->
+
+               </div><!--//section-inner-->
+            </aside><!--//section-->
+
+            <aside class="education aside section">
+              <div class="section-inner shadow-sm rounded">
+                  <h2 class="heading">Education</h2>
+                  <div class="content">
+                      <div class="item">
+                          <h3 class="title"><i class="fas fa-graduation-cap"></i> MM Music Performance</h3>
+                          <h4 class="university">San Francisco Conservatory Of Music <span class="year">(2003-2005)</span></h4>
+                      </div><!--//item-->
+                      <div class="item">
+                          <h3 class="title"><i class="fas fa-graduation-cap"></i> BM Music Performance</h3>
+                          <h4 class="university">Northwestern University <span class="year">(1999-2003)</span></h4>
+                      </div><!--//item-->
+                  </div><!--//content-->
+              </div><!--//section-inner-->
+          </aside><!--//section-->
+
+            <aside class="list music aside section">
+              <div class="section-inner shadow-sm rounded">
+                <h2 class="heading">Favorite coding music</h2>
+                <div class="content">
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=ocTZnM0U-T0">Brandt Brauer Frick</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=Ah392lnFHxM">J.S. Bach: Goldberg Variations (Glenn Gould)</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=7aUihIluYbk">The Roots: Things Fall Apart</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=8cBSndykNQo">Supreme Beings of Leisure</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=g6w3a2v_50U">Joao Gilberto</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=FO1Vq66Vjuo">Steve Reich: New York Counterpoint</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=hCMNWVTxZI4">Sonny Rollins: Saxophone Colossus</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=2NQ8woXu07c">Radiohead: Kid A</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=oFK6k-pvXmI">Janelle Monåe: Dirty Computer</a></li>
+                  </ul>
+                </div><!--//content-->
+             </div><!--//section-inner-->
+          </aside><!--//section-->
+            <!--  <aside class="list conferences aside section">
+                  <div class="section-inner shadow-sm rounded">
+                      <h2 class="heading">Conferences</h2>
+                      <div class="content">
+                          <ul class="list-unstyled">
+                              <li><i class="far fa-calendar-alt"></i> <a href="#" target="_blank">WWDC 2020</a> (San Francisco)</li>
+                              <li><i class="far fa-calendar-alt"></i> <a href="#">Hive</a> (Seattle)</li>
+                          </ul>
+                      </div><!--//content-->
+              <!--    </div><!--//section-inner-->
+            <!--  </aside><!--//section-->
+              
+            <!--  <aside class="credits aside section">
+                  <div class="section-inner shadow-sm rounded">
+                      <h2 class="heading">Credits</h2>
+                      <div class="content">
+                          <ul class="list-unstyled pb-2">
+                              <li><a href="https://getbootstrap.com/" target="_blank"><i class="fas fa-external-link-alt"></i>Bootstrap</a></li>
+                              <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fas fa-external-link-alt"></i>FontAwesome</a></li>
+                              <li><a href="https://jquery.com/" target="_blank"><i class="fas fa-external-link-alt"></i>jQuery</a></li>
+                              <li><a href="https://github.com/IonicaBizau/github-calendar" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Calendar Plugin</a></li>
+                              
+                              <li><a href="https://caseyscarborough.com/projects/github-activity/" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Activity Stream</a></li>
+                              
+                              <li><a href="https://github.com/sdepold/jquery-rss" target="_blank"><i class="fas fa-external-link-alt"></i>jQuery RSS</a></li>
+                              
+                              <li>Profile image: <a href="https://www.flickr.com/photos/dotbenjamin/2577394151" target="_blank">Ben Smith</a></li>
+                          </ul>
+
+                          <hr/>
+                          
+                            <p class="pt-2">This Bootstrap 4 portfolio template is handcrafted by UX designer <a href="https://twitter.com/3rdwave_themes" target="_blank">Xiaoying Riley</a> at <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a> for developers and is <strong>FREE</strong> as long as you keep the footer attribution link.</p>
+                            <p>If you’d like to <strong>use this template without the attribution link</strong>, you can <a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-portfolio-theme-for-web-developers/" target="_blank">buy the commercial license</a>.</p>
+
+                            <a class="btn btn-cta-primary btn-download" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-portfolio-theme-for-web-developers/" target="_blank"><i class="fas fa-download"></i> I want to download</a>
+                          <hr/>
+                          <h5 class="subheading pt-3">Want more free Bootstrap themes and templates?</h5>
+                          <p>Check out our <a href="https://themes.3rdwavemedia.com/bootstrap-templates/free/">collection of free themes and templates.</a></p>
+                          <p>Follow <a href="https://twitter.com/3rdwave_themes" target="_blank">Xiaoying</a> on twitter so you don't miss any future freebies!</p> 
+
+                          <a class="btn btn-cta-secondary btn-follow" href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fab fa-twitter"></i> Follow on twitter</a>
+
+                      </div><!--//content-->
+                <!--  </div><!--//section-inner-->
+            <!--  </aside><!--//section-->
+
+          </div><!--//secondary-->
+      </div><!--//row-->
+    </div><!--//masonry-->
+
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
+</body>
+</html> 
+
