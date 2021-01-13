@@ -34,9 +34,48 @@
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
   </head>
 
-  <body>
+  <body>    <!-- ******NAVBAR****** -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About Me</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#Basecamp">Collaborate</a>
+              <a class="dropdown-item" href="#Quiz">Trivia Game</a>
+              <a class="dropdown-item" href="#Tetris">Tetris</a>
+              <a class="dropdown-item" href="#Shoppies">Movie Awards</a>
+              <a class="dropdown-item" href="#SQL">SQL</a>
+              <a class="dropdown-item" href="#ls">Linux ls</a>
+              <a class="dropdown-item" href="#JS">Javascript Array Methods</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Open_source">Open Source</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Tech_stack">Tech Stack</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Education">Education</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- ******HEADER****** -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="container clearfix">
         <img class="profile-image img-thumbnail img-responsive float-left rounded-circle" style="width: 200px" src="assets/images/profile.png" alt="profile image" />
         <div class="profile-content float-left">
@@ -49,17 +88,28 @@
             <li class="list-inline-item"><a href="https://twitter.com/axlerosenfeld" target="_blank"><i class="fab fa-twitter"></i></a></li>
             <!-- <li class="list-inline-item last-item"><a href="https://codepen.io/arosenfeld2003" target="_blank"><i class="fab fa-codepen"></i></a></li> -->
           </ul>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>  San Francisco, US</li>
+            <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:arosenfeld2003@mac.com" target="_blank">  arosenfeld2003@mac.com</a></li>
+            <li><i class="fas fa-phone"></i><span class="sr-only">Phone:</span><a href="#" target="_blank"></a>+1 215-301-5343</a></li>
+          </ul>
         </div><!--//profile-->
-        <a class="btn btn-cta-primary float-right" href="mailto:arosenfeld2003@mac.com" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>
+        <div class="col sm-col-10 offset-sm-8">
+          <div class="row">
+            <a class="btn btn-cta-primary float-right" href="mailto:arosenfeld2003@mac.com" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>
+          </div>
+          <div class="row mt-3">
+            <img class="profile-image img-thumbnail img-responsive float-right" style="width: 200px" src="assets/images/projects/code.jpg" alt="code" />
+          </div>
+        </div>
       </div><!--//container-->
     </header><!--//header-->
-
-  <div class="container sections-wrapper">
-    <div class="row">
-      <div class="primary col-lg-8 col-12">
-        <section class="about section">
-          <div class="section-inner shadow-sm rounded">
-            <h2 class="heading">About Me</h2>
+    <div class="container sections-wrapper" id="About">
+      <div class="row">
+        <div class="primary col-lg-12 col-12">
+          <section class="about section">
+            <div class="section-inner shadow-sm rounded">
+              <h2 class="heading">About Me</h2>
               <div class="content">
                 <p>
                   I am a multi-disciplined software engineer with a varied background in the arts and technology.
@@ -74,186 +124,175 @@
               </div><!--//content-->
             </div><!--//section-inner-->
           </section><!--//section-->
-
           <section class="latest section">
             <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">Latest Projects</h2>
+              <h2 class="heading" id="Projects">Projects</h2>
+              <div class="content">
+                <div class="item featured text-center" id="Basecamp" style="padding-top: 60px;">
+                  <div class="featured-image has-ribbon">
+                    <a href="https://github.com/arosenfeld2003/collaborate" target="_blank">
+                      <img class="img-thumbnail project-image rounded shadow-sm" src="assets/images/projects/projectManagement.jpg" alt="project name" />
+                    </a>
+                    <!--
+                    <div class="ribbon">
+                      <div class="text">New</div>
+                    </div>
+                    -->
+                  </div>
+
+
+                  <h3 class="title mb-3"><a href="https://github.com/arosenfeld2003/collaborate" target="_blank">COLLABORATE</a></h3>
+
+                  <div class="desc text-left">
+                    <p>A project management tool with many features of the popular Basecamp app, built with Ruby On Rails. Users can create an authenticated account with multiple projects. Projects can have many members (with varying permissions), discussion threads (with sub-threads), attachments (text or image files), and tasks (with sub-tasks).</p>
+                  </div><!--//desc-->
+                </div><!--//item-->
+                <hr class="divider" />
+
+                <div class="item row" id="Quiz" style="padding-top: 80px;">
+                  <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/tandem_quiz" target="_blank">
+                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/trivia-image.jpg" alt="project name" />
+                  </a>
+                  <div class="desc col-md-8 col-12">
+                    <h3 class="title"><a href="https://github.com/arosenfeld2003/tandem_quiz" target="_blank">Tandem - Trivia Game</a></h3>
+                    <p class="mb-2">A fun multiple choice trivia game built with Ruby On Rails.  Tandem supplied a JSON file with questions and multiple choice answers, but the app is built for flexibility to allow substitute data.</p>
+                    <p><a class="more-link" href="https://github.com/arosenfeld2003/tandem_quiz" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                  </div>
+                </div><!--//item-->
+                <hr class="divider" />
+                <div class="item row" id="Tetris" style="padding-top: 80px;">
+                  <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/tetris" target="_blank">
+                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/tetris.jpg" alt="project name" />
+                  </a>
+                  <div class="desc col-md-8 col-12">
+                    <h3 class="title"><a href="https://github.com/arosenfeld2003/tetris" target="_blank">my_tetris</a></h3>
+                    <p class="mb-2">Recreating Tetris was a really fun way to learn about game architecture, while also focusing on the fundamentals of modern Javascript.  Using a template by Michael Karén,  I added sound effects, background music, and the ability to swap pieces in/out to a 'hold' box.</p>
+                    <p><a class="more-link" href="https://github.com/arosenfeld2003/tetris" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                  </div>
+                </div>
+                <hr class="divider" />
+                <div class="item row"  id="Shoppies" style="padding-top: 80px;">
+                  <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/shoppies" target="_blank">
+                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/shoppies.png" alt="project name" />
+                  </a>
+                  <div class="desc col-md-8 col-12">
+                    <h3 class="title"><a href="https://github.com/arosenfeld2003/shoppies" target="_blank">Shopify - OMDB API Query</a></h3>
+                    <p class="mb-2">Users can search the OMDB database for their favorite movies, and nominate up to five for a Shoppie award.  The OMDB API allows for query by specific id/title, as well as a broader query by string matching each word in a title (returning the first ten results).  The nominations are stored in a database (postreSQL for Heroku deploy), using jsonb to store a hash (the result of the OMDB title query) on each nomination record.</p>
+                    <p><a class="more-link" href="https://github.com/arosenfeld2003/shoppies" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                  </div>
+                </div><!--//item-->
+                <hr class="divider" />
+                <div class="item row" id="SQL" style="padding-top: 80px;">
+                  <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/qwasar-sql" target="_blank">
+                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/sql.jpg" alt="project name" />
+                  </a>
+                  <div class="desc col-md-8 col-12">
+                    <h3 class="title" id="SQL"><a href="https://github.com/arosenfeld2003/qwasar-sql" target="_blank">my_sqlite</a></h3>
+                    <p class="mb-2">A group of small projects completed in order to understand SQL and databases, specifically related to building web apps using Ruby on Rails.</p>
+                    <p><a class="more-link" href="https://github.com/arosenfeld2003/qwasar-sql" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                  </div><!--//desc-->
+                </div><!--//item-->
+                <hr class="divider" />
+                <div class="item row" id="ls" style="padding-top: 80px;">
+                  <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/qwasar-c-bootcamp/tree/master/my_ls" target="_blank">
+                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/ls.jpg" alt="project name" />
+                  </a>
+                  <div class="desc col-md-8 col-12">
+                    <h3 class="title" id="ls"><a href="https://github.com/arosenfeld2003/qwasar-c-bootcamp/tree/master/my_ls" target="_blank">my_ls</a></h3>
+                    <p class="mb-2">my_ls my_ls behaves similarly to the linux ls command. Files are stored in a linked list and organized using merge-sort.  It was built as part of a series of exercises to learn C and linux programming.</p>
+                    <p><a class="more-link" href="https://github.com/arosenfeld2003/qwasar-c-bootcamp" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                  </div><!--//desc-->
+                </div><!--//item-->
+                <hr class="divider" />
+                <div class="item row" id="JS" style="padding-top: 80px;">
+                  <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/testingJavascriptArrayMethods" target="_blank">
+                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/jsarrays.jpg" alt="project name" />
+                  </a>
+                  <div class="desc col-md-8 col-12">
+                    <h3 class="title" id="Array_methods"><a href="https://github.com/arosenfeld2003/testingJavascriptArrayMethods" target="_blank">JS Array Methods</a></h3>
+                    <p class="mb-2">My versions of the native JS array methods built from scratch, using a simple testing framework.  This was a fantastic way to practice TDD while familiarizing myself with the basics of Javascript.</p>
+                    <p><a class="more-link" href="https://github.com/arosenfeld2003/testingJavascriptArrayMethods" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                  </div><!--//desc-->
+                </div><!--//item-->
+                <hr class="divider" />
+                <a class="btn btn-cta-secondary" href="https://github.com/arosenfeld2003" target="_blank">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
+              </div><!--//content-->
+            </div><!--//section-inner-->
+          </section><!--//section-->
+          <div class="container sections-wrapper" id="Experience"></div>
+            <section class="experience section">
+              <div class="section-inner shadow-sm rounded">
+                <h2 class="heading" id="Experience">Experience</h2>
                 <div class="content">
-                  <div class="item featured text-center">
-                    <div class="featured-image has-ribbon">
-                      <a href="https://github.com/arosenfeld2003/basecamp" target="_blank">
-                        <img class="img-thumbnail project-image rounded shadow-sm" src="assets/images/projects/projectManagement.jpg" alt="project name" />
-                      </a>
-                      <!--
-                      <div class="ribbon">
-                        <div class="text">New</div>
-                      </div>
-                      -->
-                    </div>
-
-
-                      <h3 class="title mb-3"><a href="https://github.com/arosenfeld2003/collaborate" target="_blank">COLLABORATE</a></h3>
-
-                      <div class="desc text-left">
-                        <p>A project management tool with many features of the popular Basecamp app, built with Ruby On Rails. Users can create an authenticated account with multiple projects. Projects can have many members (with varying permissions), discussion threads (with sub-threads), attachments (text or image files), and tasks (with sub-tasks).</p>
-                      </div><!--//desc-->
-                    </div><!--//item-->
-                    <hr class="divider" />
-
-                    <div class="item row">
-                      <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/tandem_quiz" target="_blank">
-                        <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/trivia-image.jpg" alt="project name" />
-                      </a>
-                      <div class="desc col-md-8 col-12">
-                        <h3 class="title"><a href="https://github.com/arosenfeld2003/tandem_quiz" target="_blank">Tandem - Trivia Game</a></h3>
-                        <p class="mb-2">A fun multiple choice trivia game built with Ruby On Rails.  Tandem supplied a JSON file with questions and multiple choice answers, but the app is built for flexibility to allow substitute data.</p>
-                        <p><a class="more-link" href="https://github.com/arosenfeld2003/tandem_quiz" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                      </div>
-                    </div><!--//item-->
-
-                    <div class="item row">
-                      <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/tetris" target="_blank">
-                        <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/tetris.jpg" alt="project name" />
-                      </a>
-                      <div class="desc col-md-8 col-12">
-                        <h3 class="title"><a href="https://github.com/arosenfeld2003/tetris" target="_blank">my_tetris</a></h3>
-                        <p class="mb-2">Recreating Tetris was a really fun way to learn about game architecture, while also focusing on the fundamentals of modern Javascript.  Using a template by Michael Karén,  I added sound effects, background music, and the ability to swap pieces in/out to a 'hold' box.</p>
-                        <p><a class="more-link" href="https://github.com/arosenfeld2003/tetris" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                      </div>
-                    </div>
-
-                    <div class="item row">
-                      <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/shoppies" target="_blank">
-                        <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/shoppies.png" alt="project name" />
-                      </a>
-                      <div class="desc col-md-8 col-12">
-                        <h3 class="title"><a href="https://github.com/arosenfeld2003/shoppies" target="_blank">Shopify - OMDB API Query</a></h3>
-                        <p class="mb-2">Users can search the OMDB database for their favorite movies, and nominate up to five for a Shoppie award.</p>
-                        <p><a class="more-link" href="https://github.com/arosenfeld2003/shoppies" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                      </div>
-                    </div><!--//item-->
-
-                    <div class="item row">
-                      <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/qwasar-sql" target="_blank">
-                        <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/sql.jpg" alt="project name" />
-                      </a>
-                      <div class="desc col-md-8 col-12">
-                        <h3 class="title"><a href="https://github.com/arosenfeld2003/qwasar-sql" target="_blank">my_sqlite</a></h3>
-                        <p class="mb-2">A group of small projects completed in order to understand SQL and databases, specifically related to building web apps using Ruby on Rails.</p>
-                        <p><a class="more-link" href="https://github.com/arosenfeld2003/qwasar-sql" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                      </div><!--//desc-->
-                    </div><!--//item-->
-
-                    <div class="item row">
-                      <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/qwasar-c-bootcamp/tree/master/my_ls" target="_blank">
-                        <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/ls.jpg" alt="project name" />
-                      </a>
-                      <div class="desc col-md-8 col-12">
-                        <h3 class="title"><a href="https://github.com/arosenfeld2003/qwasar-c-bootcamp/tree/master/my_ls" target="_blank">my_ls</a></h3>
-                        <p class="mb-2">my_ls my_ls behaves similarly to the linux ls command. Files are stored in a linked list and organized using merge-sort.  It was built as part of a series of exercises to learn C and linux programming.</p>
-                        <p><a class="more-link" href="https://github.com/arosenfeld2003/qwasar-c-bootcamp" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                      </div><!--//desc-->
-                    </div><!--//item-->
-                    <div class="item row">
-                      <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/testingJavascriptArrayMethods" target="_blank">
-                        <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/jsarrays.jpg" alt="project name" />
-                      </a>
-                      <div class="desc col-md-8 col-12">
-                        <h3 class="title"><a href="https://github.com/arosenfeld2003/testingJavascriptArrayMethods" target="_blank">JS Array Methods</a></h3>
-                        <p class="mb-2">My versions of the native JS array methods built from scratch, using a simple testing framework.  This was a fantastic way to practice TDD while familiarizing myself with the basics of Javascript.</p>
-                        <p><a class="more-link" href="https://github.com/arosenfeld2003/testingJavascriptArrayMethods" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                      </div><!--//desc-->
-                    </div><!--//item-->
-
-                    <a class="btn btn-cta-secondary" href="https://github.com/arosenfeld2003" target="_blank">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
-                  </div><!--//content-->
-                </div><!--//section-inner-->
-              </section><!--//section-->
-
-              <section class="experience section">
-                <div class="section-inner shadow-sm rounded">
-                  <h2 class="heading">Experience</h2>
-                  <div class="content">
-                    <div class="item">
-                      <h3 class="title">Software Engineer Fellow - <span class="place"><a href="https://qwasar.io/" target="_blank">Qwasar Silicon Valley</a></span> <span class="year">(2019 - Present)</span></h3>
-                      <p>Working both individually and as part of a small team, I built many projects using numerous languages and frameworks, with a constant focus on the fundamentals of software engineering and architecture.  I gave and revieved numerous peer code reviews, and made presentations to colleagues about specific concepts or previously completed projects. </p>
-                    </div><!--//item-->
-                    <div class="item">
-                      <h3 class="title">Open Source Contributor - <span class="place"><a href="https://firefox-dev.tools/" target="_blank">Mozilla Firefox</a></span> <span class="year">(2019)</span></h3>
-                      <p>As a contributor to the devtools/debugger of Mozilla Firefox Web Browser, my code was reviewed and accepted by Mozilla engineers.
-                          I learned to digest and contribute to a large, complex modern Javascript codebase (React & Redux), worked with Mercurial (version control), and tools/libraries such as Flow and Codemirror.  I also wrote unit tests for my code using Jest and Mochitest frameworks.</p>
-                    </div><!--//item-->
-
-                    <div class="item">
-                      <h3 class="title">Student Software Engineer - <span class="place"><a href="https://watchandcode.com/" target="_blank">Watch & Code</a></span> <span class="year">(2018 - 2019)</span></h3>
-                      <p>Learned core concepts of software engineering, primarily by reading open source codebases. Projects include removing jQuery from a todo list so that it's just plain JavaScript, modifying a simple testing framework, replicating the native JS Array methods from scratch using Test Driven Development, and creating a library loading system.</p>
-                    </div><!--//item-->
-                  </div><!--//content-->
-                </div><!--//section-inner-->
-              </section><!--//section-->
-            </div><!--//primary-->
-            <div class="secondary col-lg-4 col-12">
-              <aside class="info aside section">
-                <div class="section-inner shadow-sm rounded">
-                  <h2 class="heading sr-only">Basic Information</h2>
-                  <div class="content">
-                    <ul class="list-unstyled">
-                      <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>San Francisco, US</li>
-                      <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:arosenfeld2003@mac.com" target="_blank">arosenfeld2003@mac.com</a></li>
-                      <!-- <li><i class="fas fa-phone"></i><span class="sr-only">Phone:</span><a href="#" target="_blank"></a>+1 215-301-5343</a></li> -->
-                    </ul>
-                  </div><!--//content-->
-                </div><!--//section-inner-->
-              </aside><!--//aside-->
-
-              <aside class="list music aside section">
-                <div class="section-inner shadow-sm rounded">
-                  <section class="projects section">
-                    <div class="section-inner shadow-sm rounded">
-                      <h2 class="heading">Open Source Contributions: Mozilla Firefox</h2>
-                      <div class="content">
-                        <div class="item">
-                          <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1543261" target="_blank">Conditional Panel</a> <span class="badge badge-theme">Description</span></h3>
-                          <p class="summary">Fix a bug and update the logic used when opening the breakpoint conditional panel using the keyboard shortcut.</p>
-                          <p><a class="more-link" href="https://phabricator.services.mozilla.com/D32795" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
-                        </div><!--//item-->
-                        <div class="item">
-                          <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1565011" target="_blank">Blackbox Sources</a> <span class="badge badge-theme">Description</span></h3>
-                          <p class="summary">Un-blackbox a source and add a breakpoint when the gutter is clicked.</p>
-                          <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/c226956f09f9" target="_blank"><i class="fas fa-external-link-alt"></i>Code  </a><a class="more-link" href="https://www.loom.com/share/06dc0fe5a5ff4487be282d406586bd29" target="_blank"><i class="fas fa-external-link-alt"></i>Video Walkthrough</a></p>
-                        </div><!--//item-->
-                        <div class="item">
-                          <h3 class="title"><a href="https://github.com/firefox-devtools/debugger/pull/8134" target="_blank">Quick Open Modal</a> <span class="badge badge-theme">Description</span></h3>
-                          <p class="summary">Limit the number of source file descriptors displayed in the Quick Open Modal to 100. </p>
-                          <p><a class="more-link" href="https://github.com/firefox-devtools/debugger/pull/8134/commits/8eb92ef02d9f8f5ecea7660c5abda361cd6481d6" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
-                        </div><!--//item-->
-                        <div class="item">
-                          <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1561577" target="_blank">Shortcuts Modal</a> <span class="badge badge-theme">Description</span></h3>
-                          <p class="summary">Fix bug when closing shortcuts modal with the escape key.</p>
-                          <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/33eca9689b58" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
-                        </div><!--//item-->
-                        <div class="item">
-                          <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1573241" target="_blank">Logpoint Panel</a> <span class="badge badge-theme">Description</span></h3>
-                          <p class="summary">Close previously opened conditional or logpoint panel on right-click to gutter.</p>
-                          <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/186c61bb0eff" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
-                        </div><!--//item-->
-                        <div class="item">
-                          <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1574053" target="_blank">Column Breakpoints</a> <span class="badge badge-theme">Description</span></h3>
-                          <p class="summary">Allow user to disable column breakpoints with shift-click.</p>
-                          <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/b7d1b3ab0fb5" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
-                        </div><!--//item-->
-                        <div class="item">
-                          <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1574053" target="_blank">Sources: Pretty-Print</a> <span class="badge badge-theme">Description</span></h3>
-                          <p class="summary">Show correct sources on pretty-print.</p>
-                          <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/cb54e53665de" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
-                        </div><!--//item-->
-                      </div><!--//content-->
-                    </div><!--//section-inner-->
-                  </section><!--//section-->
-                </div><!--//section-inner-->
+                  <div class="item">
+                    <h3 class="title">Software Engineer Fellow - <span class="place"><a href="https://qwasar.io/" target="_blank">Qwasar Silicon Valley</a></span> <span class="year">(2019 - Present)</span></h3>
+                    <p>Working both individually and as part of a small team, I built many projects using numerous languages and frameworks, with a constant focus on the fundamentals of software engineering and architecture.  I gave and revieved numerous peer code reviews, and made presentations to colleagues about specific concepts or previously completed projects. </p>
+                  </div><!--//item-->
+                  <div class="item">
+                    <h3 class="title">Open Source Contributor - <span class="place"><a href="https://firefox-dev.tools/" target="_blank">Mozilla Firefox</a></span> <span class="year">(2019)</span></h3>
+                    <p>As a contributor to the devtools/debugger of Mozilla Firefox Web Browser, my code was reviewed and accepted by Mozilla engineers.
+                        I learned to digest and contribute to a large, complex modern Javascript codebase (React & Redux), worked with Mercurial (version control), and tools/libraries such as Flow and Codemirror.  I also wrote unit tests for my code using Jest and Mochitest frameworks.</p>
+                  </div><!--//item-->
+                  <div class="item">
+                    <h3 class="title">Student Software Engineer - <span class="place"><a href="https://watchandcode.com/" target="_blank">Watch & Code</a></span> <span class="year">(2018 - 2019)</span></h3>
+                    <p>Learned core concepts of software engineering, primarily by reading open source codebases. Projects include removing jQuery from a todo list so that it's just plain JavaScript, modifying a simple testing framework, replicating the native JS Array methods from scratch using Test Driven Development, and creating a library loading system.</p>
+                  </div><!--//item-->
+                </div><!--//content-->
+              </div><!--//section-inner-->
+            </section><!--//section-->
+          </div><!--container-->
+        </div><!--//primary-->
+        <div class="row">
+          <div class="col" id="Open_source" style="padding-top: 80px;">
+            <aside class="list music aside section">
+              <div class="section-inner shadow-sm rounded">
+                <section class="projects section">
+                  <div class="section-inner shadow-sm rounded">
+                    <h2 class="heading">Open Source Contributions: Mozilla Firefox</h2>
+                    <div class="content">
+                      <div class="item">
+                        <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1543261" target="_blank">Conditional Panel</a> <span class="badge badge-theme">Description</span></h3>
+                        <p class="summary">Fix a bug and update the logic used when opening the breakpoint conditional panel using the keyboard shortcut.</p>
+                        <p><a class="more-link" href="https://phabricator.services.mozilla.com/D32795" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
+                      </div><!--//item-->
+                      <div class="item">
+                        <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1565011" target="_blank">Blackbox Sources</a> <span class="badge badge-theme">Description</span></h3>
+                        <p class="summary">Un-blackbox a source and add a breakpoint when the gutter is clicked.</p>
+                        <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/c226956f09f9" target="_blank"><i class="fas fa-external-link-alt"></i>Code  </a><a class="more-link" href="https://www.loom.com/share/06dc0fe5a5ff4487be282d406586bd29" target="_blank"><i class="fas fa-external-link-alt"></i>Video Walkthrough</a></p>
+                      </div><!--//item-->
+                      <div class="item">
+                        <h3 class="title"><a href="https://github.com/firefox-devtools/debugger/pull/8134" target="_blank">Quick Open Modal</a> <span class="badge badge-theme">Description</span></h3>
+                        <p class="summary">Limit the number of source file descriptors displayed in the Quick Open Modal to 100. </p>
+                        <p><a class="more-link" href="https://github.com/firefox-devtools/debugger/pull/8134/commits/8eb92ef02d9f8f5ecea7660c5abda361cd6481d6" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
+                      </div><!--//item-->
+                      <div class="item">
+                        <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1561577" target="_blank">Shortcuts Modal</a> <span class="badge badge-theme">Description</span></h3>
+                        <p class="summary">Fix bug when closing shortcuts modal with the escape key.</p>
+                        <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/33eca9689b58" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
+                      </div><!--//item-->
+                      <div class="item">
+                        <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1573241" target="_blank">Logpoint Panel</a> <span class="badge badge-theme">Description</span></h3>
+                        <p class="summary">Close previously opened conditional or logpoint panel on right-click to gutter.</p>
+                        <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/186c61bb0eff" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
+                      </div><!--//item-->
+                      <div class="item">
+                        <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1574053" target="_blank">Column Breakpoints</a> <span class="badge badge-theme">Description</span></h3>
+                        <p class="summary">Allow user to disable column breakpoints with shift-click.</p>
+                        <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/b7d1b3ab0fb5" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
+                      </div><!--//item-->
+                      <div class="item">
+                        <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1574053" target="_blank">Sources: Pretty-Print</a> <span class="badge badge-theme">Description</span></h3>
+                        <p class="summary">Show correct sources on pretty-print.</p>
+                        <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/cb54e53665de" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
+                      </div><!--//item-->
+                    </div><!--//content-->
+                  </div><!--//section-inner-->
+                </section><!--//section-->
+              </div><!--//section-inner-->
             </aside><!--//section-->
-
-            <aside class="skills aside section">
+          </div> <!--//col-->
+          <div class="col">
+            <aside class="skills aside section" id="Tech_stack" style="padding-top: 60px;">
               <div class="section-inner shadow-sm rounded">
                 <h2 class="heading">Tech Stack</h2>
                 <div class="content">
@@ -288,8 +327,7 @@
                 </div><!--//content-->
               </div><!--//section-inner-->
             </aside><!--//section-->
-
-            <aside class="education aside section">
+            <aside class="education aside section" id="Education" style="padding-top: 60px;">
               <div class="section-inner shadow-sm rounded">
                   <h2 class="heading">Education</h2>
                   <div class="content">
@@ -303,37 +341,35 @@
                       </div><!--//item-->
                   </div><!--//content-->
               </div><!--//section-inner-->
-          </aside><!--//section-->
-
-          <aside class="list music aside section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">Favorite coding music</h2>
-              <div class="content">
-                <ul class="list-unstyled">
-                  <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=ocTZnM0U-T0" target="_blank">Brandt Brauer Frick</a></li>
-                  <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=Ah392lnFHxM" target="_blank">J.S. Bach</a></li>
-                  <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=7aUihIluYbk" target="_blank">The Roots</a></li>
-                  <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=8cBSndykNQo" target="_blank">Supreme Beings of Leisure</a></li>
-                  <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=g6w3a2v_50U" target="_blank">Joao Gilberto</a></li>
-                  <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=FO1Vq66Vjuo" target="_blank">Steve Reich</a></li>
-                  <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=hCMNWVTxZI4" target="_blank">Sonny Rollins</a></li>
-                  <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=2NQ8woXu07c" target="_blank">Radiohead</a></li>
-                  <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=oFK6k-pvXmI" target="_blank">Janelle Monåe</a></li>
-                  <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=9I4qIUj9b48" target="_blank">Eugen Cicero</a></li>
-                </ul>
-              </div><!--//content-->
-            </div><!--//section-inner-->
-          </aside><!--//section-->
-
+            </aside><!--//section-->
+            <aside class="list music aside section">
+              <div class="section-inner shadow-sm rounded">
+                <h2 class="heading">Favorite coding music</h2>
+                <div class="content">
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=ocTZnM0U-T0" target="_blank">Brandt Brauer Frick</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=Ah392lnFHxM" target="_blank">J.S. Bach</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=7aUihIluYbk" target="_blank">The Roots</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=8cBSndykNQo" target="_blank">Supreme Beings of Leisure</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=g6w3a2v_50U" target="_blank">Joao Gilberto</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=FO1Vq66Vjuo" target="_blank">Steve Reich</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=hCMNWVTxZI4" target="_blank">Sonny Rollins</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=2NQ8woXu07c" target="_blank">Radiohead</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=oFK6k-pvXmI" target="_blank">Janelle Monåe</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=9I4qIUj9b48" target="_blank">Eugen Cicero</a></li>
+                  </ul>
+                </div><!--//content-->
+              </div><!--//section-inner-->
+            </aside><!--//section-->
+          </div><!--//row-->
         </div><!--//secondary-->
       </div><!--//row-->
-    </div><!--//masonry-->
-
+    </div><!--//container-->
     <!-- ******FOOTER****** -->
     <footer class="footer">
-        <div class="container text-center">
-            <small class="copyright">@Alex Rosenfeld 2020</small>
-        </div><!--//container-->
+      <div class="container text-center">
+        <small class="copyright">@Alex Rosenfeld 2020</small>
+      </div><!--//container-->
     </footer><!--//footer-->
 
     <!-- Javascript -->
