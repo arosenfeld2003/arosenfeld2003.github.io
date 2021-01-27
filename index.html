@@ -39,7 +39,7 @@
   </head>
 
   <body>    <!-- ******NAVBAR****** -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Home</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#About">About Me</a>
+            <a class="nav-link" href="#About">About</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -75,8 +75,12 @@
           <li class="nav-item">
             <a class="nav-link" href="#Education">Education</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Music"><img src="assets/images/projects/music_notes.png" width="25px" height="25px"/></a>
+          </li>
         </ul>
       </div>
+      <a class="btn btn-light float-right" href="mailto:arosenfeld2003@mac.com" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>
     </nav>
     <!-- ******HEADER****** -->
     <header class="header" id="header">
@@ -143,10 +147,7 @@
                     </div>
                     -->
                   </div>
-
-
                   <h3 class="title mb-3"><a href="https://github.com/arosenfeld2003/collaborate" target="_blank">COLLABORATE</a></h3>
-
                   <div class="desc text-left">
                     <p>A project management tool with many features of the popular Basecamp app, built with Ruby On Rails. Users can create an authenticated account with multiple projects. Projects can have many members (with varying permissions), discussion threads (with sub-threads), attachments (text or image files), and tasks (with sub-tasks).</p>
                   </div><!--//desc-->
@@ -221,12 +222,14 @@
                 <hr class="divider" />
                 <a class="btn btn-cta-secondary" href="https://github.com/arosenfeld2003" target="_blank">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
               </div><!--//content-->
+              <!-- id 'Experience' here to offset the Navbar height for anchor -->
+              <div id="Experience"></div>
             </div><!--//section-inner-->
           </section><!--//section-->
-          <div class="container sections-wrapper" id="Experience"></div>
+          <div class="container"></div>
             <section class="experience section">
               <div class="section-inner shadow-sm rounded">
-                <h2 class="heading" id="Experience">Experience</h2>
+                <h2 class="heading">Experience</h2>
                 <div class="content">
                   <div class="item">
                     <h3 class="title">Software Engineer Fellow - <span class="place"><a href="https://qwasar.io/" target="_blank">Qwasar Silicon Valley</a></span> <span class="year">(2019 - Present)</span></h3>
@@ -241,68 +244,77 @@
                     <h3 class="title">Student Software Engineer - <span class="place"><a href="https://watchandcode.com/" target="_blank">Watch & Code</a></span> <span class="year">(2018 - 2019)</span></h3>
                     <p>Learned core concepts of software engineering, primarily by reading open source codebases. Projects include removing jQuery from a todo list so that it's just plain JavaScript, modifying a simple testing framework, replicating the native JS Array methods from scratch using Test Driven Development, and creating a library loading system.</p>
                   </div><!--//item-->
+                  <!-- Open Source id here to offset Navbar for anchor -->
+                  <div id="Open_source"></div>
                 </div><!--//content-->
               </div><!--//section-inner-->
             </section><!--//section-->
           </div><!--container-->
         </div><!--//primary-->
         <div class="row">
-          <div class="col" id="Open_source" style="padding-top: 60px;">
+          <div class="col">
             <aside class="list music aside section">
               <div class="section-inner shadow-sm rounded">
                 <section class="projects section">
-                  <div class="section-inner shadow-sm rounded">
-                    <h2 class="heading">Open Source Contributions: Mozilla Firefox</h2>
-                    <div class="content">
-                      <div class="item">
-                        <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1543261" target="_blank">Conditional Panel</a> <span class="badge badge-theme">Description</span></h3>
-                        <p class="summary">Fix a bug and update the logic used when opening the breakpoint conditional panel using the keyboard shortcut.</p>
-                        <p><a class="more-link" href="https://phabricator.services.mozilla.com/D32795" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
-                      </div><!--//item-->
-                      <div class="item">
-                        <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1565011" target="_blank">Blackbox Sources</a> <span class="badge badge-theme">Description</span></h3>
-                        <p class="summary">Un-blackbox a source and add a breakpoint when the gutter is clicked.</p>
-                        <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/c226956f09f9" target="_blank"><i class="fas fa-external-link-alt"></i>Code  </a><a class="more-link" href="https://www.loom.com/share/06dc0fe5a5ff4487be282d406586bd29" target="_blank"><i class="fas fa-external-link-alt"></i>Video Walkthrough</a></p>
-                      </div><!--//item-->
-                      <div class="item">
-                        <h3 class="title"><a href="https://github.com/firefox-devtools/debugger/pull/8134" target="_blank">Quick Open Modal</a> <span class="badge badge-theme">Description</span></h3>
-                        <p class="summary">Limit the number of source file descriptors displayed in the Quick Open Modal to 100. </p>
-                        <p><a class="more-link" href="https://github.com/firefox-devtools/debugger/pull/8134/commits/8eb92ef02d9f8f5ecea7660c5abda361cd6481d6" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
-                      </div><!--//item-->
-                      <div class="item">
-                        <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1561577" target="_blank">Shortcuts Modal</a> <span class="badge badge-theme">Description</span></h3>
-                        <p class="summary">Fix bug when closing shortcuts modal with the escape key.</p>
-                        <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/33eca9689b58" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
-                      </div><!--//item-->
-                      <div class="item">
-                        <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1573241" target="_blank">Logpoint Panel</a> <span class="badge badge-theme">Description</span></h3>
-                        <p class="summary">Close previously opened conditional or logpoint panel on right-click to gutter.</p>
-                        <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/186c61bb0eff" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
-                      </div><!--//item-->
-                      <div class="item">
-                        <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1574053" target="_blank">Column Breakpoints</a> <span class="badge badge-theme">Description</span></h3>
-                        <p class="summary">Allow user to disable column breakpoints with shift-click.</p>
-                        <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/b7d1b3ab0fb5" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
-                      </div><!--//item-->
-                      <div class="item">
-                        <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1574053" target="_blank">Sources: Pretty-Print</a> <span class="badge badge-theme">Description</span></h3>
-                        <p class="summary">Show correct sources on pretty-print.</p>
-                        <p><a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/cb54e53665de" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a></p>
-                      </div><!--//item-->
-                    </div><!--//content-->
-                  </div><!--//section-inner-->
+                  <h2 class="heading">Open Source Contributions: Mozilla Firefox - Debugger</h2>
+                  <div class="content">
+                    <div class="item">
+                      <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1543261" target="_blank">Conditional Panel</a> <span class="badge badge-theme">Description</span></h3>
+                      <p class="summary">Fix a bug and update the logic used when opening the breakpoint conditional panel using the keyboard shortcut.
+                        <a class="more-link" href="https://phabricator.services.mozilla.com/D32795" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a>
+                      </p>
+                    </div><!--//item-->
+                    <div class="item">
+                      <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1565011" target="_blank">Blackbox Sources</a> <span class="badge badge-theme">Description</span></h3>
+                      <p class="summary">Un-blackbox a source and add a breakpoint when the gutter is clicked.
+                        <a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/c226956f09f9" target="_blank"><i class="fas fa-external-link-alt"></i>Code  </a><a class="more-link" href="https://www.loom.com/share/06dc0fe5a5ff4487be282d406586bd29" target="_blank"><i class="fas fa-external-link-alt"></i>Video Walkthrough</a>
+                      </p>
+                    </div><!--//item-->
+                    <div class="item">
+                      <h3 class="title"><a href="https://github.com/firefox-devtools/debugger/pull/8134" target="_blank">Quick Open Modal</a> <span class="badge badge-theme">Description</span></h3>
+                      <p class="summary">Limit the number of source file descriptors displayed in the Quick Open Modal to 100.
+                        <a class="more-link" href="https://github.com/firefox-devtools/debugger/pull/8134/commits/8eb92ef02d9f8f5ecea7660c5abda361cd6481d6" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a>
+                      </p>
+                    </div><!--//item-->
+                    <div class="item">
+                      <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1561577" target="_blank">Shortcuts Modal</a> <span class="badge badge-theme">Description</span></h3>
+                      <p class="summary">Fix bug when closing shortcuts modal with the escape key.
+                        <a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/33eca9689b58" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a>
+                      </p>
+                    </div><!--//item-->
+                    <div class="item">
+                      <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1573241" target="_blank">Logpoint Panel</a> <span class="badge badge-theme">Description</span></h3>
+                      <p class="summary">Close previously opened conditional or logpoint panel on right-click to gutter.
+                        <a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/186c61bb0eff" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a>
+                      </p>
+                    </div><!--//item-->
+                    <div class="item">
+                      <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1574053" target="_blank">Column Breakpoints</a> <span class="badge badge-theme">Description</span></h3>
+                      <p class="summary">Allow user to disable column breakpoints with shift-click.
+                        <a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/b7d1b3ab0fb5" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a>
+                      </p>
+                    </div><!--//item-->
+                    <div class="item">
+                      <h3 class="title"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1574053" target="_blank">Sources: Pretty-Print</a> <span class="badge badge-theme">Description</span></h3>
+                      <p class="summary">Show correct sources on pretty-print.
+                        <a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/cb54e53665de" target="_blank"><i class="fas fa-external-link-alt"></i>Code</a>
+                      <p>
+                    </div><!--//item-->
+                  </div><!--//content-->
+                    <!--//tech stack id to offset navbar for anchor-->
+                  <div id="Tech_stack"></div>
                 </section><!--//section-->
               </div><!--//section-inner-->
             </aside><!--//section-->
           </div> <!--//col-->
+        </div> <!-- //row-->
+        <div class="row">
           <div class="col">
-            <aside class="skills aside section" id="Tech_stack" style="padding-top: 60px;">
+            <aside class="skills aside section">
               <div class="section-inner shadow-sm rounded">
                 <h2 class="heading">Tech Stack</h2>
                 <div class="content">
-                  <p class="intro">
-                      Some of the languages, libraries, and frameworks I have worked with include:</p>
-
+                  <p class="intro">Some of the languages, libraries, and frameworks I have worked with:</p>
                   <div class="skillset">
                     <div class="item">
                       <h3 class="level-title">C &amp; Linux<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Built my own libraries of many standard C and Linux methods"><i class="fas fa-info-circle"></i></span></h3>
@@ -329,26 +341,29 @@
                     <!-- <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> -->
                   </div>
                 </div><!--//content-->
+                <!-- id Education to offset navbar on anchor-->
+                <div id="Education"></div>
               </div><!--//section-inner-->
             </aside><!--//section-->
-            <aside class="education aside section" id="Education" style="padding-top: 60px;">
+            <aside class="education aside section">
               <div class="section-inner shadow-sm rounded">
-                  <h2 class="heading">Education</h2>
-                  <div class="content">
-                      <div class="item">
-                          <h3 class="title"><i class="fas fa-graduation-cap"></i> MM Music Performance</h3>
-                          <h4 class="university">San Francisco Conservatory Of Music <span class="year">(2003-2005)</span></h4>
-                      </div><!--//item-->
-                      <div class="item">
-                          <h3 class="title"><i class="fas fa-graduation-cap"></i> BM Music Performance</h3>
-                          <h4 class="university">Northwestern University <span class="year">(1999-2003)</span></h4>
-                      </div><!--//item-->
-                  </div><!--//content-->
+                <h2 class="heading">Education</h2>
+                <div class="content">
+                  <div class="item">
+                    <h3 class="title"><i class="fas fa-graduation-cap"></i> MM Music Performance</h3>
+                    <h4 class="university">San Francisco Conservatory Of Music <span class="year">(2003-2005)</span></h4>
+                  </div><!--//item-->
+                  <div class="item">
+                    <h3 class="title"><i class="fas fa-graduation-cap"></i> BM Music Performance</h3>
+                    <h4 class="university">Northwestern University <span class="year">(1999-2003)</span></h4>
+                  </div><!--//item-->
+                </div><!--//content-->
               </div><!--//section-inner-->
             </aside><!--//section-->
             <aside class="list music aside section">
+              <div id="Music"></div>
               <div class="section-inner shadow-sm rounded">
-                <h2 class="heading">Favorite coding music</h2>
+                <h2 class="heading">Groovy Tunes</h2>
                 <div class="content">
                   <ul class="list-unstyled">
                     <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=ocTZnM0U-T0" target="_blank">Brandt Brauer Frick</a></li>
@@ -356,7 +371,7 @@
                     <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=7aUihIluYbk" target="_blank">The Roots</a></li>
                     <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=8cBSndykNQo" target="_blank">Supreme Beings of Leisure</a></li>
                     <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=g6w3a2v_50U" target="_blank">Joao Gilberto</a></li>
-                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=FO1Vq66Vjuo" target="_blank">Steve Reich</a></li>
+                    <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?reload=9&v=OoA0cTC228M" target="_blank">LCD Soundsystem</a></li>
                     <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=hCMNWVTxZI4" target="_blank">Sonny Rollins</a></li>
                     <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=2NQ8woXu07c" target="_blank">Radiohead</a></li>
                     <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=oFK6k-pvXmI" target="_blank">Janelle Monåe</a></li>
