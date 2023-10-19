@@ -54,6 +54,8 @@
               Projects
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#NBA">NBA Analysis</a>
+              <a class="dropdown-item" href="#Messages">Messages</a>
               <a class="dropdown-item" href="#Basecamp">Collaborate</a>
               <a class="dropdown-item" href="#Quiz">Trivia Game</a>
               <a class="dropdown-item" href="#Tetris">Tetris</a>
@@ -137,39 +139,40 @@
             <div class="section-inner shadow-sm rounded">
               <h2 class="heading" id="Projects">Projects</h2>
               <div class="content">
-                <div class="item featured text-center" id="Basecamp" style="padding-top: 60px;">
-                  <div class="featured-image has-ribbon">
-                    <a href="https://github.com/arosenfeld2003/collaborate" target="_blank">
-                      <img class="img-thumbnail project-image rounded shadow-sm" src="assets/images/projects/projectManagement.jpg" alt="project name" />
-                    </a>
-                    <!--
-                    <div class="ribbon">
-                      <div class="text">New</div>
-                    </div>
-                    -->
+                <div class="item row" id="NBA" style="padding-top: 80px;">
+                  <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/data_projects/tree/main/nba_game_analysis" target="_blank">
+                    <img class="img-thumbnail project-image rounded shadow-sm" src="assets/images/projects/embiid.jpeg" alt="project name" />
+                  </a>
+                  <div class="desc col-md-8 col-12">
+                    <h3 class="title mb-3"><a href="https://github.com/arosenfeld2003/data_projects/tree/main/nba_game_analysis" target="_blank">NBA Game Analysis</a></h3>
+                    <p class="mb-2">Summarize play-by-play data scraped from the web for an NBA game.</p>
                   </div>
-                  <h3 class="title mb-3"><a href="https://github.com/arosenfeld2003/collaborate" target="_blank">COLLABORATE</a></h3>
-                  <div class="desc text-left">
-                    <p>A project management tool with many features of the popular Basecamp app, built with Ruby On Rails. Users can create an authenticated account with multiple projects. Projects can have many members (with varying permissions), discussion threads (with sub-threads), attachments (text or image files), and tasks (with sub-tasks).</p>
-                  </div><!--//desc-->
-<!--                  <p><a class="more-link" href="https://stormy-crag-63797.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i>See a live demo!</a></p>-->
-                </div><!--//item-->
-                <hr class="divider" />
-                <!--
-                <div class="item featured text-center" id="Messages" style="padding-top: 60px;">
-                  <div class="featured-image has-ribbon">
-                    <a href="https://github.com/arosenfeld2003/messages" target="_blank">
-                      <img class="img-thumbnail project-image rounded shadow-sm" src="assets/images/projects/microblogging.jpg" alt="project name" />
-                    </a>=
-                  </div>
-                  <h3 class="title mb-3"><a href="https://github.com/arosenfeld2003/messages" target="_blank">MESSAGES</a></h3>
-                  <div class="desc text-left">
-                    <p>A micro-blogging service that replicates the functionality of Twitter, built with React and Rails.  Users can create an authenticated account, post tweets, and follow other users.  Tweets can be commented, liked, and retweeted.</p>
-                  </div>
-                  <p><a class="more-link" href="https://ancient-cliffs-03132.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i>See a live demo!</a></p>
                 </div>
                 <hr class="divider" />
-                -->
+                <div class="item row" id="Basecamp" style="padding-top: 80px;">
+<!--                  <div class="featured-image has-ribbon">-->
+                    <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/collaborate" target="_blank">
+                      <img class="img-thumbnail project-image rounded shadow-sm" src="assets/images/projects/projectManagement.jpg" alt="project name" />
+                    </a>
+                  <div class="desc col-md-8 col-12">
+                    <h3 class="title mb-3"><a href="https://github.com/arosenfeld2003/collaborate" target="_blank">COLLABORATE</a></h3>
+                    <p class="mb-2">A project management tool with many features of the popular Basecamp app, built with Ruby On Rails. Users can create an authenticated account with multiple projects. Projects can have many members (with varying permissions), discussion threads (with sub-threads), attachments (text or image files), and tasks (with sub-tasks).</p>
+                  </div>
+                </div><!--//item-->
+                <hr class="divider" />
+                <div class="item row" id="Messages" style="padding-top: 80px;">
+<!--                  <div class="featured-image has-ribbon">-->
+                    <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/messages" target="_blank">
+                      <img class="img-thumbnail project-image rounded shadow-sm" src="assets/images/projects/microblogging.jpg" alt="project name" />
+                    </a>
+<!--                  </div>-->
+                  <div class="desc col-md-8 col-12">
+                    <h3 class="title mb-3"><a href="https://github.com/arosenfeld2003/messages" target="_blank">MESSAGES</a></h3>
+                    <p class="mb-2">A micro-blogging service that replicates the functionality of Twitter (or X if you prefer), built with React and Rails.  Users can create an authenticated account, post tweets, and follow other users.  Tweets can be commented, liked, and retweeted.</p>
+                  </div>
+<!--                <p><a class="more-link" href="https://ancient-cliffs-03132.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i>See a live demo!</a></p>-->
+                </div>
+                <hr class="divider" /><!--//item-->
                 <div class="item row" id="Quiz" style="padding-top: 80px;">
                   <a class="col-md-4 col-12" href="https://github.com/arosenfeld2003/tandem_quiz" target="_blank">
                     <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/trivia-image.jpg" alt="project name" />
@@ -250,7 +253,11 @@
                   <div class="item">
                     <h3 class="title">Software Engineer - <span class="place"><a href="https://www.evercast.us/" target="_blank">Evercast</a></span> <span class="year">(2021 - 2023)</span></h3>
                     <p>
-                      Built custom tool in Evercast Admin Portal using React/Node, allowing Customer Support to resend account verification emails to clients.  Regularly debug and improve core Evercast services, and generate data reports for Senior Management/Customer Support.  Refactored and improved Postgres DB queries, and assisted with NoSQL schema design for Non-Core-Data-Service in AWS DynamoDB.  Wrote automated reporting scripts with Python and synced with Google Cloud to populate results to Google Sheets and share internally.  Scripted process of deleting customer recordings from AWS S3 with Python Boto3 SDK, helping reduce annual AWS costs by 71%.
+                      Developed custom tool for Admin Portal using React/Typescript/Node for account verification emails, saving ~5-10 dev hours/week.
+                      Automated process of deleting client recordings from AWS S3 using Python Boto3, helping reduce AWS costs by 70%.
+                      Automated platform usage reports (PSQL, AWS Lambda, Google Cloud) to share data directly with senior management and support.
+                      Debugged and documented services in Go (Room Scheduler) and C (Janus WebRTC server) to streamline developer onboarding.
+                      Refactored authentication service (Typescript, Node) for Okta integration to satisfy strict security for global enterprise clients.
                     </p>
                   </div><!--//item-->
                   <div class="item">
@@ -262,8 +269,8 @@
                   <div class="item">
                     <h3 class="title">Software Engineer Fellow - <span class="place"><a href="https://qwasar.io/" target="_blank">Qwasar Silicon Valley</a></span> <span class="year">(2019 - 2021)</span></h3>
                     <p>
-                      Working both individually and as part of a small team, I built many projects using numerous languages and frameworks, with a constant focus on the fundamentals of software engineering and architecture.
-                      I gave and received numerous peer code reviews, and made presentations to colleagues about specific concepts or previously completed projects.
+                      Working both individually and as part of a small team, built many projects using numerous languages and frameworks, with a constant focus on the fundamentals of software engineering and architecture.
+                      Gave and received numerous peer code reviews, and made presentations to colleagues about specific concepts or previously completed projects.
                     </p>
                   </div><!--//item-->
                   <div class="item">
@@ -354,61 +361,65 @@
         </div> <!-- //row-->
         <div class="row">
           <div class="col">
-            <aside class="skills aside section">
-              <div class="section-inner shadow-sm rounded">
-                <h2 class="heading">Tech Stack</h2>
-                <div class="content">
-                  <p class="intro">Some of the languages, libraries, and frameworks I have worked with:</p>
-                  <div class="skillset">
-                    <div class="item">
-                      <h3 class="level-title">C &amp; Linux<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Built my own libraries of many standard C and Linux methods"><i class="fas fa-info-circle"></i></span></h3>
-                    </div><!--//item-->
-                    <div class="item">
-                      <h3 class="level-title">Javascript &amp; Typescript: React, Redux, jQuery<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Made updates across stack of internal company applications using Typescript, React, JS.  While contributing to Mozilla Firefox (ES6, React/Redux), I also used JS libraries and tools including Codemirror and Flow."><i class="fas fa-info-circle"></i></span></h3>
-                    </div><!--//item-->
-                    <div class="item">
-                      <h3 class="level-title">Python<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Used python to automate the process of generating reports for senior management, integrating with APIs such as GoogleSheets, and interacting with AWS services such as S3"><i class="fas fa-info-circle"></i></span></h3>
-                    </div><!--//item-->
-                    <div class="item">
-                      <h3 class="level-title">Cloud: AWS<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Interacted daily with AWS services such as EC2, RDS, and S3 while ensuring peak performance of company platform and integrity of extensive library of client session video recordings"><i class="fas fa-info-circle"></i></span></h3>
-                    </div><!--//item-->
-                    <div class="item">
-                      <h3 class="level-title">Ruby on Rails<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Built multiple web applications using Ruby On Rails, including my version of the project management app Basecamp."><i class="fas fa-info-circle"></i></span></h3>
-                    </div><!--//item-->
-                    <div class="item">
-                      <h3 class="level-title">HTML5, CSS, Bootstrap 4<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Styled many webpages and personal projects.  Also made UI/UX improvements to the devtools of Firefox."><i class="fas fa-info-circle"></i></span></h3>
-                    </div><!--//item-->
-                    <div class="item">
-                      <h3 class="level-title">SQL: PostgreSQL, SQLite<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Evercast: used DBeaver to make daily PSQL queries for Customer Service, and wrote Python scripts using psycopg2 to run PSQL queries generating usage reports for senior management.  PSQL also used for hosting projects on Heroku.  SQLite backend to Ruby On Rails projects."><i class="fas fa-info-circle"></i></span></h3>
-                    </div><!--//item-->
-                    <div class="item">
-                      <h3 class="level-title">Version Control: Git, Github, Mercurial<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I've contributed to and managed numerous Git repositories for Qwasar projects and code reviews, used Github to share my work and for personal projects, and used Mercurial when contributing to the Firefox debugger."><i class="fas fa-info-circle"></i></span></h3>
-                    </div><!--//item-->
-                    <div class="item">
-                      <h3 class="level-title">Testing: Jest, Karma, Mochitest, Tinytest<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Wrote numerous tests for Mozilla Firefox, including DOM snapshot testing."><i class="fas fa-info-circle"></i></span></h3>
-                    </div><!--//item-->
-                    <!-- <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> -->
-                  </div>
-                </div><!--//content-->
-                <!-- id Education to offset navbar on anchor-->
-                <div id="Education"></div>
-              </div><!--//section-inner-->
-            </aside><!--//section-->
-            <aside class="education aside section">
-              <div class="section-inner shadow-sm rounded">
-                <h2 class="heading">Education</h2>
-                <div class="content">
-                  <div class="item">
-                    <h3 class="title"><i class="fas fa-graduation-cap"></i> MM Music Performance</h3>
-                    <h4 class="university">San Francisco Conservatory Of Music <span class="year">(2003-2005)</span></h4>
-                  </div><!--//item-->
-                  <div class="item">
-                    <h3 class="title"><i class="fas fa-graduation-cap"></i> BM Music Performance</h3>
-                    <h4 class="university">Northwestern University <span class="year">(1999-2003)</span></h4>
-                  </div><!--//item-->
-                </div><!--//content-->
-              </div><!--//section-inner-->
-            </aside><!--//section-->
+<!--            <aside class="skills aside section">-->
+<!--              <div class="section-inner shadow-sm rounded">-->
+<!--                <h2 class="heading">Tech Stack</h2>-->
+<!--                <div class="content">-->
+<!--                  <p class="intro">Some of the languages, libraries, and frameworks I have worked with:</p>-->
+<!--                  <div class="skillset">-->
+<!--                    <div class="item">-->
+<!--                      <h3 class="level-title">C &amp; Linux<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Built my own libraries of many standard C and Linux methods"><i class="fas fa-info-circle"></i></span></h3>-->
+<!--                    </div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--                    <div class="item">-->
+<!--                      <h3 class="level-title">Javascript &amp; Typescript: React, Redux, jQuery<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Made updates across stack of internal company applications using Typescript, React, JS.  While contributing to Mozilla Firefox (ES6, React/Redux), I also used JS libraries and tools including Codemirror and Flow."><i class="fas fa-info-circle"></i></span></h3>-->
+<!--                    </div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--                    <div class="item">-->
+<!--                      <h3 class="level-title">Python<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Used python to automate the process of generating reports for senior management, integrating with APIs such as GoogleSheets, and interacting with AWS services such as S3"><i class="fas fa-info-circle"></i></span></h3>-->
+<!--                    </div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--                    <div class="item">-->
+<!--                      <h3 class="level-title">Cloud: AWS<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Interacted daily with AWS services such as EC2, RDS, and S3 while ensuring peak performance of company platform and integrity of extensive library of client session video recordings"><i class="fas fa-info-circle"></i></span></h3>-->
+<!--                    </div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--                    <div class="item">-->
+<!--                      <h3 class="level-title">Ruby on Rails<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Built multiple web applications using Ruby On Rails, including my version of the project management app Basecamp."><i class="fas fa-info-circle"></i></span></h3>-->
+<!--                    </div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--                    <div class="item">-->
+<!--                      <h3 class="level-title">HTML5, CSS, Bootstrap 4<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Styled many webpages and personal projects.  Also made UI/UX improvements to the devtools of Firefox."><i class="fas fa-info-circle"></i></span></h3>-->
+<!--                    </div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--                    <div class="item">-->
+<!--                      <h3 class="level-title">SQL: PostgreSQL, SQLite<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Evercast: regularly make PSQL queries for Customer Service; composed Python scripts using psycopg2 to run PSQL queries generating usage reports for senior management.  PSQL also used for hosting projects on Heroku.  SQLite backend to Ruby On Rails projects."><i class="fas fa-info-circle"></i></span></h3>-->
+<!--                    </div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--                    <div class="item">-->
+<!--                      <h3 class="level-title">Version Control: Git, Github, Mercurial<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I've contributed to and managed numerous Git repositories for Qwasar projects and code reviews, used Github to share my work and for personal projects, and used Mercurial when contributing to the Firefox debugger."><i class="fas fa-info-circle"></i></span></h3>-->
+<!--                    </div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--                    <div class="item">-->
+<!--                      <h3 class="level-title">Testing: Jest, Karma, Mochitest, Tinytest<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Wrote numerous tests for Mozilla Firefox, including DOM snapshot testing."><i class="fas fa-info-circle"></i></span></h3>-->
+<!--                    </div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--                    &lt;!&ndash; <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> &ndash;&gt;-->
+<!--                  </div>-->
+<!--                </div>&lt;!&ndash;//content&ndash;&gt;-->
+<!--                &lt;!&ndash; id Education to offset navbar on anchor&ndash;&gt;-->
+<!--                <div id="Education"></div>-->
+<!--              </div>&lt;!&ndash;//section-inner&ndash;&gt;-->
+<!--            </aside>&lt;!&ndash;//section&ndash;&gt;-->
+<!--            <aside class="education aside section">-->
+<!--              <div class="section-inner shadow-sm rounded">-->
+<!--                <h2 class="heading">Education</h2>-->
+<!--                <div class="content">-->
+<!--                  <div class="item">-->
+<!--                    <h3 class="title"><i class="fas fa-graduation-cap"></i> MS Computer Science</h3>-->
+<!--                    <h4 class="university">Woolf University - Qwasar College <span class="year">(2023 - )</span></h4>-->
+<!--                  </div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--                  <div class="item">-->
+<!--                    <h3 class="title"><i class="fas fa-graduation-cap"></i> MM Music Performance</h3>-->
+<!--                    <h4 class="university">San Francisco Conservatory Of Music <span class="year">(2003-2005)</span></h4>-->
+<!--                  </div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--                  <div class="item">-->
+<!--                    <h3 class="title"><i class="fas fa-graduation-cap"></i> BM Music Performance</h3>-->
+<!--                    <h4 class="university">Northwestern University <span class="year">(1999-2003)</span></h4>-->
+<!--                  </div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--                </div>&lt;!&ndash;//content&ndash;&gt;-->
+<!--              </div>&lt;!&ndash;//section-inner&ndash;&gt;-->
+<!--            </aside>&lt;!&ndash;//section&ndash;&gt;-->
             <aside class="list music aside section">
               <div id="Music"></div>
               <div class="section-inner shadow-sm rounded">
@@ -438,7 +449,7 @@
     <!-- ******FOOTER****** -->
     <footer class="footer">
       <div class="container text-center">
-        <small class="copyright">@Alex Rosenfeld 2022</small>
+        <small class="copyright">@Alex Rosenfeld 2023</small>
       </div><!--//container-->
     </footer><!--//footer-->
 
