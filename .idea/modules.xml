@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/Qwasar/.idea/Qwasar.iml" filepath="$USER_HOME$/Qwasar/.idea/Qwasar.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/arosenfeld2003.github.io.iml" filepath="$PROJECT_DIR$/.idea/arosenfeld2003.github.io.iml" />
-      <module fileurl="file://$USER_HOME$/WebstormProjects/stay-with-us/.idea/stay-with-us.iml" filepath="$USER_HOME$/WebstormProjects/stay-with-us/.idea/stay-with-us.iml" />
     </modules>
   </component>
 </project>
