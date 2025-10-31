@@ -359,7 +359,12 @@ a.dotted-link:hover {
 }
 
 .experience .item .title .place a {
-  color: #999;
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+  .place a:hover {
+    color: #0052a3; /* slightly darker on hover */
 }
 
 .experience .item .title .place a:hover {
