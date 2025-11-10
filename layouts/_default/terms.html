@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <header class="header">
+        <h1 class="glow-text">{{ .Title }}</h1>
+      </header>
+
+      <section class="section">
+        <div class="section-inner shadow-sm">
+          <div class="content">
+            <ul class="list-unstyled">
+              {{ range .Data.Terms.Alphabetical }}
+              <li style="margin-bottom: 1rem;">
+                <a href="{{ .Page.Permalink }}">
+                  <span class="badge">{{ .Page.Title }}</span>
+                  <span style="color: var(--gray); margin-left: 0.5rem;">({{ .Count }})</span>
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+{{ end }}

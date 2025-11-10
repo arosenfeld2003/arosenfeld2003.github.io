@@ -1,0 +1,40 @@
+{{ define "main" }}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <header class="header">
+        <h1 class="glow-text">{{ .Title }}</h1>
+        <p class="lead" style="font-family: var(--font-terminal); font-size: 1.5rem;">
+          > {{ .Data.Plural }} archive
+        </p>
+      </header>
+
+      <section class="section">
+        <div class="section-inner shadow-sm">
+          <h2 class="heading">Posts</h2>
+          <div class="content">
+            {{ range .Pages }}
+            <article class="item">
+              <h3 class="title">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+              </h3>
+              <div class="meta" style="color: var(--gray); font-size: 0.875rem; margin-bottom: 0.5rem;">
+                <i class="far fa-calendar"></i> {{ .Date.Format "January 2, 2006" }}
+              </div>
+              {{ if .Params.summary }}
+              <p class="summary">{{ .Params.summary }}</p>
+              {{ else }}
+              <p class="summary">{{ .Summary }}</p>
+              {{ end }}
+              <a href="{{ .Permalink }}" class="btn btn-cta-secondary">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </article>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+{{ end }}

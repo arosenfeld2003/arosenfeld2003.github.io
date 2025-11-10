@@ -1,0 +1,69 @@
+baseURL = 'https://www.adrosenfeld.com/'
+languageCode = 'en-us'
+title = 'Alex Rosenfeld: Software Engineer'
+theme = 'portfolio'
+
+# Enable emoji support
+enableEmoji = true
+
+# Pagination
+[pagination]
+  pagerSize = 10
+
+[params]
+  author = 'Alex Rosenfeld'
+  description = 'Full stack software developer passionate about exploring new technologies'
+  email = 'arosenfeld2003@mac.com'
+  location = 'San Francisco, US'
+  github = 'arosenfeld2003'
+  linkedin = 'alexdrosenfeld'
+  stackoverflow = '8881684/alex'
+
+[params.social]
+  github = 'https://github.com/arosenfeld2003'
+  linkedin = 'https://www.linkedin.com/in/alexdrosenfeld/'
+  stackoverflow = 'https://stackoverflow.com/users/8881684/alex'
+
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+
+[markup]
+  [markup.highlight]
+    style = 'monokai'
+    lineNos = true
+    lineNumbersInTable = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow HTML in markdown
+
+# Menu configuration
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 1
+
+[[menu.main]]
+  name = 'About'
+  url = '/#about'
+  weight = 2
+
+[[menu.main]]
+  name = 'Experience'
+  url = '/#experience'
+  weight = 3
+
+[[menu.main]]
+  name = 'Blog'
+  url = '/blog/'
+  weight = 4
+
+[[menu.main]]
+  name = 'Open Source'
+  url = '/opensource/'
+  weight = 5
+
+# Output formats
+[outputs]
+  home = ['HTML', 'RSS']
+  section = ['HTML', 'RSS']
