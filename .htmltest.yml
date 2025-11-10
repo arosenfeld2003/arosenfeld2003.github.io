@@ -1,0 +1,15 @@
+# htmltest configuration for link checking and HTML validation
+DirectoryPath: "public"
+CheckDoctype: true
+CheckExternal: true
+CheckFavicon: true
+CheckInternalHash: true
+CheckMailto: false  # Skip mailto validation
+EnforceHTTPS: true
+IgnoreURLs:
+  - "http://localhost"
+  - "http://127.0.0.1"
+IgnoreInternalEmptyHash: true
+IgnoreDirs:
+  - "assets/fontawesome"
+  - "assets/plugins"

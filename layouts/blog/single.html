@@ -1,0 +1,66 @@
+{{ define "main" }}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <article class="section">
+        <div class="section-inner shadow-sm">
+          <header>
+            <h1 class="glow-text">{{ .Title }}</h1>
+            <div class="meta" style="color: var(--gray); font-size: 1rem; margin-bottom: 2rem;">
+              <i class="far fa-calendar"></i> {{ .Date.Format "January 2, 2006" }}
+              {{ with .Params.category }}
+              <span style="margin-left: 1rem;">
+                <i class="fas fa-folder"></i> {{ . | humanize }}
+              </span>
+              {{ end }}
+              {{ with .Params.tags }}
+              <span style="margin-left: 1rem;">
+                <i class="fas fa-tags"></i>
+                {{ range $index, $tag := . }}
+                  {{ if $index }}, {{ end }}
+                  <span class="badge">{{ $tag }}</span>
+                {{ end }}
+              </span>
+              {{ end }}
+              <span style="margin-left: 1rem;">
+                <i class="far fa-clock"></i> {{ .ReadingTime }} min read
+              </span>
+            </div>
+          </header>
+
+          <div class="content">
+            {{ .Content }}
+          </div>
+
+          <hr class="divider" />
+
+          <footer style="margin-top: 2rem;">
+            <div class="row">
+              <div class="col-md-6">
+                {{ with .PrevInSection }}
+                <a href="{{ .Permalink }}" class="btn btn-cta-secondary">
+                  <i class="fas fa-arrow-left"></i> {{ .Title }}
+                </a>
+                {{ end }}
+              </div>
+              <div class="col-md-6 text-end">
+                {{ with .NextInSection }}
+                <a href="{{ .Permalink }}" class="btn btn-cta-secondary">
+                  {{ .Title }} <i class="fas fa-arrow-right"></i>
+                </a>
+                {{ end }}
+              </div>
+            </div>
+
+            <div class="mt-4 text-center">
+              <a href="/blog/" class="btn btn-cta-primary">
+                <i class="fas fa-list"></i> Back to Blog
+              </a>
+            </div>
+          </footer>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+{{ end }}

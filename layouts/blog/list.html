@@ -1,0 +1,83 @@
+{{ define "main" }}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <header class="header">
+        <h1 class="glow-text">horn.call()</h1>
+        <p class="lead" style="font-family: var(--font-terminal); font-size: 1.5rem;">
+          > Where music, humanity, and technology intersect
+        </p>
+      </header>
+
+      <section class="section">
+        <div class="section-inner shadow-sm">
+          <h2 class="heading">Recent Posts</h2>
+          <div class="content">
+            {{ $paginator := .Paginate (where .Site.RegularPages "Section" "blog") }}
+            {{ range $paginator.Pages }}
+            <article class="item">
+              <h3 class="title">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+              </h3>
+              <div class="meta" style="color: var(--gray); font-size: 0.875rem; margin-bottom: 0.5rem;">
+                <i class="far fa-calendar"></i> {{ .Date.Format "January 2, 2006" }}
+                {{ with .Params.category }}
+                <span style="margin-left: 1rem;">
+                  <i class="fas fa-folder"></i> {{ . | humanize }}
+                </span>
+                {{ end }}
+                {{ with .Params.tags }}
+                <span style="margin-left: 1rem;">
+                  <i class="fas fa-tags"></i>
+                  {{ range $index, $tag := . }}
+                    {{ if $index }}, {{ end }}
+                    <span class="badge">{{ $tag }}</span>
+                  {{ end }}
+                </span>
+                {{ end }}
+              </div>
+              {{ if .Params.summary }}
+              <p class="summary">{{ .Params.summary }}</p>
+              {{ else }}
+              <p class="summary">{{ .Summary }}</p>
+              {{ end }}
+              <a href="{{ .Permalink }}" class="btn btn-cta-secondary">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </article>
+            {{ end }}
+
+            {{ if gt $paginator.TotalPages 1 }}
+            <nav aria-label="Page navigation" class="mt-4">
+              <ul class="pagination justify-content-center">
+                {{ if $paginator.HasPrev }}
+                <li class="page-item">
+                  <a class="page-link" href="{{ $paginator.Prev.URL }}" aria-label="Previous">
+                    <span aria-hidden="true">&laquo; Prev</span>
+                  </a>
+                </li>
+                {{ end }}
+
+                {{ range $paginator.Pagers }}
+                <li class="page-item {{ if eq . $paginator }}active{{ end }}">
+                  <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>
+                </li>
+                {{ end }}
+
+                {{ if $paginator.HasNext }}
+                <li class="page-item">
+                  <a class="page-link" href="{{ $paginator.Next.URL }}" aria-label="Next">
+                    <span aria-hidden="true">Next &raquo;</span>
+                  </a>
+                </li>
+                {{ end }}
+              </ul>
+            </nav>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+{{ end }}

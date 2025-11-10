@@ -1,0 +1,120 @@
+{{ define "main" }}
+<!-- Header / Hero Section -->
+<header class="header" id="header">
+  <div class="container clearfix">
+    <div class="row">
+      <div class="col-md-3">
+        <img class="profile-image img-thumbnail rounded-circle"
+             src="/assets/images/profile.png"
+             alt="{{ .Site.Params.author }}"
+             width="200" />
+      </div>
+      <div class="col-md-6 profile-content">
+        <h1 class="name">{{ .Site.Params.author }}</h1>
+        <h2 class="desc cursor-blink">Software Engineer</h2>
+        <ul class="social list-inline">
+          <li class="list-inline-item">
+            <a href="{{ .Site.Params.social.linkedin }}" target="_blank" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="{{ .Site.Params.social.github }}" target="_blank" title="GitHub">
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="{{ .Site.Params.social.stackoverflow }}" target="_blank" title="Stack Overflow">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-unstyled">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="sr-only">Location:</span> {{ .Site.Params.location }}
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span class="sr-only">Email:</span>
+            <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <div class="text-center">
+          <a class="btn btn-cta-primary" href="mailto:{{ .Site.Params.email }}">
+            <i class="fas fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+        <div class="mt-3 text-center">
+          <img class="img-thumbnail"
+               src="/assets/images/projects/code.jpg"
+               alt="code"
+               style="max-width: 200px;" />
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container sections-wrapper" id="about">
+  <div class="row">
+    <div class="col-lg-12">
+      <!-- About Section -->
+      <section class="about section">
+        <div class="section-inner shadow-sm">
+          <h2 class="heading">About Me</h2>
+          <div class="content">
+            <p>
+              I am a professional full stack software developer with a proven ability to work constructively and cohesively in dynamic teams of varying sizes.
+              I have worked on numerous projects across the tech stack from frontend, to data, to backend, and infrastructure.
+              I'm passionate about exploring new technologies to make a positive impact on society, and particularly interested in developer tooling, media streaming, data engineering, and the application of AI and Large Language Models to improve software development.
+            </p>
+            <p>
+              For fifteen years I performed as an <a href="https://www.linkedin.com/company/orchestral-musician-french-horn" target="_blank">orchestral musician</a> (French Horn) with many orchestras across the United States,
+              including several years frequently on stage and touring with the San Francisco Symphony. You can read more about my musical background (and diagnoses of Focal Dystonia) in this
+              <a href="https://otia.io/2020/12/03/alex-rosenfeld-software-engineer-fellow-and-orchestral-musician/" target="_blank">Otia article</a>.
+            </p>
+            <p>
+              My non-technical interests include reading, movies, sports, running, camping, traveling and generally being outdoors.
+              I also enjoy writing, and have had several concert reviews published by <a href="https://www.sfcv.org/author/alex-rosenfeld" target="_blank">San Francisco Classical Voice</a>.
+              I live in San Francisco with my wife and our adopted Muttville pup.
+            </p>
+            <a class="btn btn-cta-secondary" href="{{ .Site.Params.social.github }}" target="_blank">
+              GitHub Profile <i class="fas fa-chevron-right"></i>
+            </a>
+            <a class="btn btn-cta-secondary" href="/blog/">
+              Read My Blog <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="experience section" id="experience">
+        <div class="section-inner shadow-sm">
+          <h2 class="heading">Professional Experience</h2>
+          {{ partial "experience.html" . }}
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section class="education section" id="education">
+        <div class="section-inner shadow-sm">
+          <h2 class="heading">Education</h2>
+          {{ partial "education.html" . }}
+        </div>
+      </section>
+
+      <!-- Music Section -->
+      <section class="music section" id="music">
+        <div class="section-inner shadow-sm">
+          <h2 class="heading">Groovy Tunes</h2>
+          {{ partial "music.html" . }}
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+{{ end }}
