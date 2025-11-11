@@ -1,7 +1,6 @@
 baseURL = 'https://www.adrosenfeld.com/'
 languageCode = 'en-us'
 title = 'Alex Rosenfeld: Software Engineer'
-theme = 'portfolio'
 
 # Enable emoji support
 enableEmoji = true
