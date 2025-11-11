@@ -403,15 +403,6 @@ a.dotted-link:hover {
 }
 
 /* Info Section */
-.info .svg-inline--fa {
-  margin-right: 15px;
-  color: #ccd1d6;
-}
-
-.info .svg-inline--fa.fa-envelope-o {
-  font-size: 14px;
-}
-
 .info ul {
   margin-bottom: 0;
 }
@@ -645,10 +636,6 @@ a.dotted-link:hover {
 
 .footer a {
   color: #fff;
-}
-
-.footer .fa-heart {
-  color: #fb866a;
 }
 
 @media (max-width: 767.98px) {

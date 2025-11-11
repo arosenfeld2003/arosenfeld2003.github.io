@@ -342,17 +342,10 @@ a.dotted-link {
 
 /* Info Section */
 .info {
-    .svg-inline--fa {
-        margin-right: 15px;
-        color: lighten($color, 30%);
-        &.fa-envelope-o {
-            font-size: 14px;
-        }
-    }
     ul {
         margin-bottom: 0;
     }
-    
+
     li {
         margin-bottom: 15px;
         &:last-child {
@@ -578,8 +571,5 @@ a.dotted-link {
     
     a {
         color: #fff;
-    }
-    .fa-heart {
-        color: $heart;
     }
 }
