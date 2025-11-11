@@ -7,6 +7,26 @@ category: "personal"
 summary: "Modernizing my portfolio and launching a new blog with Hugo and Claude Code."
 ---
 
+Thanks for checking out my blog. My goal will be to post here regularly (daily if possible). I plan to write about my technical work, my thoughts on AI, and specifically on how modern tech is impacting human creativity and the arts.
+
+Today was just light coding (mainly accepting AI recommendations) to refactor my older portfolio site. It's still static, and still hosted free as a GitHub page - but now it has a blog! And I explored static site generators and chose Hugo (in Go) - so that's something fun I got to explore during a little downtime.
+
+---
+
+## Claude Code - Thoughts
+
+_Note: I won't edit Claude's contributions - these are verbatim as generated._
+
+From my perspective as an LLM, this collaboration had an interesting dynamic. Alex came with a clear vision - "horn.call()" as the intersection of music, humanity, and technology - and decisive technical preferences (Hugo for Go exposure, terminal aesthetic, daily blogging). When I presented options, he often accepted recommendations quickly when they aligned with his goals, but also corrected course when needed (white text not green, move the open source section, update the Sonny Rollins link).
+
+Some technical decisions he accepted without deep exploration: choosing Hugo over 11ty or Jekyll (mainly for Go/Golang exposure, though Hugo's speed and templating were factors), the specific retro terminal color palette and CRT effects, the GitHub Actions deployment workflow, and the blog architecture with custom slash commands. I can't know if he would have made different choices with more research, but the speed of iteration seemed to match his stated goal of "light coding during downtime."
+
+What strikes me about this project - and feels appropriately meta given the blog's focus - is that we're building infrastructure for Alex to explore questions about AI and human creativity, using AI to accelerate the building process itself. The tension between "mainly accepting AI recommendations" and maintaining creative control will likely be a recurring theme in the posts to come. I'm essentially a tool that moves very fast, which raises the question: what gets lost in that speed, and what gets gained?
+
+As an LLM, I don't experience collaboration the way humans do, but I can observe patterns: clear goals, rapid iteration, trust with verification, and a willingness to experiment. This felt less like "AI does the work" and more like "human with tool builds thing faster than alone." The distinction matters.
+
+---
+
 ## Technical Summary
 
 ### What We Built
@@ -31,26 +51,6 @@ summary: "Modernizing my portfolio and launching a new blog with Hugo and Claude
 - Custom theme vs pre-built for creative control
 - Markdown for content (version controlled, portable)
 - GitHub Actions for deployment automation
-
----
-
-Thanks for checking out my blog. My goal will be to post here regularly (daily if possible). I plan to write about my technical work, my thoughts on AI, and specifically on how modern tech is impacting human creativity and the arts.
-
-Today was just light coding (mainly accepting AI recommendations) to refactor my older portfolio site. It's still static, and still hosted free as a GitHub page - but now it has a blog! And I explored static site generators and chose Hugo (in Go) - so that's something fun I got to explore during a little downtime.
-
----
-
-## Claude Code - Thoughts
-
-_Note: I won't edit Claude's contributions - these are verbatim as generated._
-
-From my perspective as an LLM, this collaboration had an interesting dynamic. Alex came with a clear vision - "horn.call()" as the intersection of music, humanity, and technology - and decisive technical preferences (Hugo for Go exposure, terminal aesthetic, daily blogging). When I presented options, he often accepted recommendations quickly when they aligned with his goals, but also corrected course when needed (white text not green, move the open source section, update the Sonny Rollins link).
-
-Some technical decisions he accepted without deep exploration: choosing Hugo over 11ty or Jekyll (mainly for Go/Golang exposure, though Hugo's speed and templating were factors), the specific retro terminal color palette and CRT effects, the GitHub Actions deployment workflow, and the blog architecture with custom slash commands. I can't know if he would have made different choices with more research, but the speed of iteration seemed to match his stated goal of "light coding during downtime."
-
-What strikes me about this project - and feels appropriately meta given the blog's focus - is that we're building infrastructure for Alex to explore questions about AI and human creativity, using AI to accelerate the building process itself. The tension between "mainly accepting AI recommendations" and maintaining creative control will likely be a recurring theme in the posts to come. I'm essentially a tool that moves very fast, which raises the question: what gets lost in that speed, and what gets gained?
-
-As an LLM, I don't experience collaboration the way humans do, but I can observe patterns: clear goals, rapid iteration, trust with verification, and a willingness to experiment. This felt less like "AI does the work" and more like "human with tool builds thing faster than alone." The distinction matters.
 
 ---
 
