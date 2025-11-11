@@ -20,15 +20,15 @@
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
               </h3>
               <div class="meta" style="color: var(--gray); font-size: 0.875rem; margin-bottom: 0.5rem;">
-                <i class="far fa-calendar"></i> {{ .Date.Format "January 2, 2006" }}
+                📅 {{ .Date.Format "January 2, 2006" }}
                 {{ with .Params.category }}
                 <span style="margin-left: 1rem;">
-                  <i class="fas fa-folder"></i> {{ . | humanize }}
+                  📁 {{ . | humanize }}
                 </span>
                 {{ end }}
                 {{ with .Params.tags }}
                 <span style="margin-left: 1rem;">
-                  <i class="fas fa-tags"></i>
+                  🏷
                   {{ range $index, $tag := . }}
                     {{ if $index }}, {{ end }}
                     <span class="badge">{{ $tag }}</span>
@@ -42,7 +42,7 @@
               <p class="summary">{{ .Summary }}</p>
               {{ end }}
               <a href="{{ .Permalink }}" class="btn btn-cta-secondary">
-                Read More <i class="fas fa-arrow-right"></i>
+                Read More →
               </a>
             </article>
             {{ end }}
