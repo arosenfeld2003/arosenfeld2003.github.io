@@ -13,17 +13,15 @@ draft: false
         <a class="more-link" href="https://github.com/Code-For-Chicago/greater-chicago-food-despository-ui/pull/29" target="_blank">→ View Code</a>
       </p>
     </div>
-
-    <hr class="divider" />
-
+  </div>
+  <div class="section-inner shadow-sm">
     <h2 class="heading">Mozilla Firefox - Debugger</h2>
-    <div class="item">
-      <h3><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1543261" target="_blank">Conditional Panel</a> <span class="badge badge-theme">Bug Fix</span></h3>
-      <p class="summary">Fix a bug and update the logic used when opening the breakpoint conditional panel using the keyboard shortcut.
+      <div class="item">
+        <h3><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1543261" target="_blank">Conditional Panel</a> <span class="badge badge-theme">Bug Fix</span></h3>
+        <p class="summary">Fix a bug and update the logic used when opening the breakpoint conditional panel using the keyboard shortcut.
         <a class="more-link" href="https://phabricator.services.mozilla.com/D32795" target="_blank">→ View Code</a>
-      </p>
-    </div>
-
+        </p>
+      </div>
     <div class="item">
       <h3><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1565011" target="_blank">Blackbox Sources</a> <span class="badge badge-theme">Feature</span></h3>
       <p class="summary">Un-blackbox a source and add a breakpoint when the gutter is clicked.
@@ -31,35 +29,30 @@ draft: false
         <a class="more-link" href="https://www.loom.com/share/06dc0fe5a5ff4487be282d406586bd29" target="_blank">→ Video Walkthrough</a>
       </p>
     </div>
-
     <div class="item">
       <h3><a href="https://github.com/firefox-devtools/debugger/pull/8134" target="_blank">Quick Open Modal</a> <span class="badge badge-theme">Enhancement</span></h3>
       <p class="summary">Limit the number of source file descriptors displayed in the Quick Open Modal to 100.
         <a class="more-link" href="https://github.com/firefox-devtools/debugger/pull/8134/commits/8eb92ef02d9f8f5ecea7660c5abda361cd6481d6" target="_blank">→ View Code</a>
       </p>
     </div>
-
     <div class="item">
       <h3><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1561577" target="_blank">Shortcuts Modal</a> <span class="badge badge-theme">Bug Fix</span></h3>
       <p class="summary">Fix bug when closing shortcuts modal with the escape key.
         <a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/33eca9689b58" target="_blank">→ View Code</a>
       </p>
     </div>
-
     <div class="item">
       <h3><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1573241" target="_blank">Logpoint Panel</a> <span class="badge badge-theme">Bug Fix</span></h3>
       <p class="summary">Close previously opened conditional or logpoint panel on right-click to gutter.
         <a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/186c61bb0eff" target="_blank">→ View Code</a>
       </p>
     </div>
-
     <div class="item">
       <h3><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1574053" target="_blank">Column Breakpoints</a> <span class="badge badge-theme">Feature</span></h3>
       <p class="summary">Allow user to disable column breakpoints with shift-click.
         <a class="more-link" href="https://hg.mozilla.org/integration/autoland/rev/b7d1b3ab0fb5" target="_blank">→ View Code</a>
       </p>
     </div>
-
     <div class="item">
       <h3><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1574053" target="_blank">Sources: Pretty-Print</a> <span class="badge badge-theme">Bug Fix</span></h3>
       <p class="summary">Show correct sources on pretty-print.
