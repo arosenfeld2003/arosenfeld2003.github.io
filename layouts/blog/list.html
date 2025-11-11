@@ -13,7 +13,9 @@
         <div class="section-inner shadow-sm">
           <h2 class="heading">Recent Posts</h2>
           <div class="content">
-            {{ $paginator := .Paginate (where .Site.RegularPages "Section" "blog") }}
+            {{ $blogPages := where .Site.RegularPages "Section" "blog" }}
+            {{ $sortedPages := sort $blogPages ".Date" "desc" }}
+            {{ $paginator := .Paginate $sortedPages }}
             {{ range $paginator.Pages }}
             <article class="item">
               <h3 class="title">
