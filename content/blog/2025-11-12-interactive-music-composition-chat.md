@@ -1,6 +1,6 @@
 ---
 title: "Building an AI Music Composition App: Speed, Creativity, and What Gets Lost"
-date: 2025-11-12T22:00:00-08:00
+date: 2025-11-11T20:00:00-08:00
 tags: ["ai", "music-tech", "claude-code", "openai", "creativity", "learning"]
 category: "personal"
 summary: "Reflections on building a working music composition prototype in hours, not months - and what that means for learning and creativity."
