@@ -1,7 +1,7 @@
 ---
 title: "Building Custom Claude Code Commands for Session Management"
 date: 2025-11-13T09:00:00-08:00
-draft: true
+draft: false
 tags: ["claude-code", "automation", "workflow", "meta"]
 category: "technical"
 summary: "Creating custom slash commands for Claude Code to automate session resumption and blog post generation"
