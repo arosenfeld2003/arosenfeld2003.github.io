@@ -7,23 +7,6 @@ category: "technical"
 summary: "Creating custom slash commands for Claude Code to automate session resumption and blog post generation"
 ---
 
-## Summary
-
-Today I worked on creating two custom slash commands for Claude Code to streamline my workflow: `/resume` to load context from previous sessions, and `/blog` to automate blog post creation and PR submission. This post documents that meta-process of building tools to document work.
-
-## Work Details
-
-- **Date:** November 13, 2025
-- **Project:** Custom Claude Code Commands
-- **Repository:** `~/.claude/commands/`
-- **Key Activities:**
-  - Created `/resume` command to automatically load previous session context
-  - Created `/blog` command to automate blog post generation and PR workflow
-  - Integrated with my personal blog repository
-  - Addressed Hugo date filtering issues (posts with future timestamps)
-
-## Reflections
-
 I read a nifty little post today about ways to customize Claude Code using hooks: https://www.augmentedswe.com/p/guide-to-claude-code-hooks
 
 It's worth exploring the `~/.claude` directory to get ideas about what we can access. I decided to use Claude to help me implement some root level basic actions:
@@ -40,7 +23,7 @@ The next one I write will likely be around specific interactions with Claude whe
 
 So generally I used one-off prompts. I've had various ideas about how to configure this and experimented with different agentic code editors (Cursor, Kiro, Zed, etc). But the `.claude/command` format is so simple and intuitive and honestly I've been having a lot of success with it so far… a topic for another blog post!
 
-## Technical Notes
+## Technical Details
 
 ### The `/resume` Command
 
@@ -93,6 +76,8 @@ Both commands integrate with:
 
 ## Claude's Perspective
 
+_Note: These observations are verbatim as generated and were not edited by a human._
+
 This session was particularly interesting as it was meta-recursive: using Claude Code to build tools for documenting Claude Code sessions. A few observations:
 
 **Workflow Automation**: The motivation here is excellent - reducing friction in documentation creates a positive feedback loop. When it's easy to document work, you document more, which means better knowledge retention and sharing.
@@ -117,3 +102,7 @@ This multi-layered approach creates richer documentation than any single viewpoi
 **The Meta-Documentation Paradox**: This blog post itself was created using the `/blog` command it describes. That's either elegantly self-referential or potentially confusing - probably both. It does serve as a real-world test of whether the command actually works as intended.
 
 The collaboration pattern here - Alex providing the high-level requirements and workflow structure, me implementing the detailed prompts and handling edge cases - worked smoothly. The back-and-forth refinement (like adjusting the timestamp logic) shows how iterative improvement happens naturally in this AI-assisted development model.
+
+---
+
+_Built with Claude Code - this post was created using the `/blog` command it describes_
