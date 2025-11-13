@@ -1,73 +1,38 @@
 # blog-from-commits
 
-You are helping Alex create a new blog post for his blog "horn.call()" by analyzing his recent git commits and creating a structured template.
+This is a repository-specific command that analyzes git commits from specified repositories and delegates to the root `/blog` command for post creation.
 
 ## Instructions
 
 1. Ask Alex which repository/repositories to analyze and the time period (e.g., "last 3 days", "this week", "since Monday")
 
-2. Run git log commands to gather commit information:
+2. For each repository specified, run git log commands to gather commit information:
    ```bash
+   cd /path/to/repo
    git log --since="[timeframe]" --pretty=format:"%h - %an, %ar : %s" --no-merges
+   git diff $(git log --since="[timeframe]" --format=%H | tail -1)~1..HEAD
    ```
 
-3. Analyze the commits and create a new blog post markdown file in `content/blog/` with:
-   - Filename format: `YYYY-MM-DD-brief-slug.md`
-   - Proper frontmatter (title, date, draft: true, tags, category, summary)
-   - A structured outline including:
-     - Brief summary section (empty - for Alex to fill)
-     - List of commits/activities with repo names
-     - Empty sections for: Technical Details, Reflections, Next Steps
+3. Analyze and summarize the commits:
+   - Group related commits by feature/fix/refactor
+   - Identify key technical decisions
+   - Note any interesting patterns or challenges
+   - Extract repository names and relevant context
 
-4. DO NOT write the actual blog content - only provide the structure and commit data
-5. The goal is to give Alex a jumping-off point with the factual commit data, which he'll expand in his own voice
+4. Pass this commit analysis as the "session context" to the root `/blog` command by invoking it with the SlashCommand tool
 
-## Important Notes
+5. The root `/blog` command will handle:
+   - Getting user reflections
+   - Creating the properly formatted blog post file
+   - Generating Claude's perspective
+   - Creating the PR
 
-- Keep the tone neutral and factual in the template
-- Focus on extracting meaningful commit patterns (features, fixes, refactors)
-- Group related commits together
-- Leave plenty of space for Alex to add his own thoughts and narrative
-- This is just a starting template - Alex will do the real writing
+## Key Difference from Root `/blog`
 
-## Example Output Structure
+- **Root `/blog`**: Analyzes current working directory and today's commits
+- **Repo `/blog-from-commits`**: Allows multi-repo analysis over custom timeframes, then delegates to root `/blog` for formatting and creation
 
-```markdown
----
-title: "[Alex provides this]"
-date: 2025-11-10T14:30:00-08:00
-draft: true
-tags: []
-category: "personal"
-summary: ""
----
-
-## Commit Activity Summary
-
-### Repository: [repo-name]
-- [commit hash] - [commit message]
-- [commit hash] - [commit message]
-
-### Repository: [repo-name-2]
-- [commit hash] - [commit message]
-
-## What I Built
-
-[Alex fills this in]
-
-## Technical Deep Dive
-
-[Alex fills this in]
-
-## Reflections
-
-[Alex fills this in]
-
-## What's Next
-
-[Alex fills this in]
-
----
+After gathering commit data, invoke the root command:
 ```
-
-Now ask Alex which repo(s) and timeframe to analyze, then generate the template.
+Use the SlashCommand tool to call /blog
+```

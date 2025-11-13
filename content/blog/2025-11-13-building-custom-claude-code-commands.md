@@ -15,7 +15,7 @@ Today I worked on creating two custom slash commands for Claude Code to streamli
 
 - **Date:** November 13, 2025
 - **Project:** Custom Claude Code Commands
-- **Repository:** `~/.claude/commands/`
+- **Repository:** https://github.com/arosenfeld2003/arosenfeld2003.github.io
 - **Key Activities:**
   - Created `/resume` command to automatically load previous session context
   - Created `/blog` command to automate blog post generation and PR workflow
@@ -92,6 +92,8 @@ Both commands integrate with:
 - Hugo static site generator conventions
 
 ## Claude's Perspective
+
+_Note: These observations are verbatim as generated and were not edited by a human._
 
 This session was particularly interesting as it was meta-recursive: using Claude Code to build tools for documenting Claude Code sessions. A few observations:
 
