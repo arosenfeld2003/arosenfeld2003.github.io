@@ -1,7 +1,7 @@
 ---
 title: "MIDI to Musical Notation: Experiments with Claude"
 date: 2025-11-17T09:00:00-08:00
-draft: true
+draft: false
 tags: ["music-tech", "midi", "ai", "claude", "experiments", "abc-notation"]
 category: "technical"
 summary: "An entertaining (and educational) experiment watching Claude attempt to implement MIDI to musical notation conversion - a reminder that domain expertise matters, even for AI."
