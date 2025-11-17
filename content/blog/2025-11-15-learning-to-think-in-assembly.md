@@ -1,7 +1,7 @@
 ---
 title: "Learning to Think in Assembly: From Doing to Understanding"
 date: 2025-11-15T09:00:00-08:00
-draft: true
+draft: false
 tags: ["assembly", "x86-64", "learning", "mscs", "low-level-programming", "qwasar"]
 category: "technical"
 summary: "A journey through x86-64 assembly programming that revealed the crucial difference between doing and understanding—and why sometimes you need to give yourself permission to act before you fully comprehend."
