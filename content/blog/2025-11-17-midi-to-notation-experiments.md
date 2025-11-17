@@ -9,7 +9,7 @@ summary: "An entertaining (and educational) experiment watching Claude attempt t
 
 It was entertaining to watch Claude attempt to implement on its own a conversion program for MIDI to musical notation. This is an incredibly complex task - e.g. [this academic paper on MIDI quantisation](https://www.turing.ac.uk/sites/default/files/2022-09/midi_quantisation_paper_ismir_2022_0.pdf).
 
-The best approach is undoubtedly to use an open source package (e.g. MuseScore). Claude Code attempted to convert the MIDI file into ABC notation and then to musical notation. It did attempt quantization which was kinda cool.
+The best approach is undoubtedly to use an open source package (e.g. MuseScore). Claude Code attempted to convert the MIDI file into ABC notation and then to musical notation. It did attempt quantisation which was kinda cool.
 
 I went along with this just as an experiment and for a little bit of fun and minimal learning, but obviously this approach was flawed from the start.
 
