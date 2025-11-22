@@ -1,7 +1,7 @@
 ---
 title: "Improving the Blog Workflow: Independent Perspectives"
 date: 2025-11-22T09:00:00-08:00
-draft: true
+draft: false
 tags: ["meta", "documentation", "ai", "claude", "workflow", "process"]
 category: "technical"
 summary: "Refining the /blog command workflow to ensure Claude's technical analysis remains independent of user reflections, preventing hallucination and maintaining separate perspectives."
