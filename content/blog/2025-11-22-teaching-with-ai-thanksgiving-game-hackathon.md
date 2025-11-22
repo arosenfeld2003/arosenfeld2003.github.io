@@ -1,7 +1,7 @@
 ---
 title: "Teaching with AI: Reflections from a Thanksgiving Game Hackathon"
 date: 2025-11-22T09:00:00-08:00
-draft: true
+draft: false
 tags: ["teaching", "ai", "education", "game-development", "p5js", "learning", "pedagogy"]
 category: "technical"
 summary: "Observations from teaching beginners to code with AI assistance: the paradox of tools that simultaneously accelerate and obstruct learning."
