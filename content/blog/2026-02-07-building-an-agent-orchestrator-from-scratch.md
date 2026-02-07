@@ -1,7 +1,7 @@
 ---
 title: "Building an AI Agent Orchestrator from Scratch in Python"
 date: 2026-02-07T09:00:00-08:00
-draft: true
+draft: false
 tags: ["python", "agents", "design-patterns", "oop", "testing"]
 category: "technical"
 summary: "Building a multi-agent system incrementally across 4 assignments — agent loops, pluggable tools, bounded memory with escalation, and orchestration — all in pure Python with 50 tests and zero LLM dependencies."
