@@ -1,7 +1,7 @@
 ---
 title: "Chasing Overflow Down the CSS Rabbit Hole"
 date: 2026-02-09T09:00:00-08:00
-draft: true
+draft: false
 tags: ["css", "hugo", "responsive-design", "debugging", "claude-code"]
 category: "technical"
 summary: "A debugging session where fixing one CSS overflow led to discovering Hugo's hidden table-based syntax highlighting, duplicate asset files, and the joys of browser caching."
