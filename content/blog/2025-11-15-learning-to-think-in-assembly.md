@@ -93,7 +93,7 @@ syscall
 jc .error              ; Check carry flag for errors
 ```
 
-This comes from macOS's BSD heritage - the offset distinguishes BSD syscalls from other types. I documented the official sources in [docs/05-syscalls.md](https://github.com/arosenfeld2003/my_libasm/blob/dev/docs/05-syscalls.md).
+This comes from macOS's BSD heritage - the offset distinguishes BSD syscalls from other types. I documented the official sources in [docs/05-syscalls.md](https://github.com/arosenfeld2003/my_libasm/blob/main/docs/05-syscalls.md).
 
 **The rep Prefix**
 
@@ -159,13 +159,13 @@ pop rax               ; Restore original pointer
 
 I created extensive documentation in the repository:
 
-- **[00-index.md](https://github.com/arosenfeld2003/my_libasm/blob/dev/docs/00-index.md)** - Project roadmap and function ordering
-- **[01-registers.md](https://github.com/arosenfeld2003/my_libasm/blob/dev/docs/01-registers.md)** - Understanding CPU registers
-- **[02-calling-convention.md](https://github.com/arosenfeld2003/my_libasm/blob/dev/docs/02-calling-convention.md)** - How function arguments work
-- **[03-instructions.md](https://github.com/arosenfeld2003/my_libasm/blob/dev/docs/03-instructions.md)** - Common assembly operations
-- **[04-nasm-syntax.md](https://github.com/arosenfeld2003/my_libasm/blob/dev/docs/04-nasm-syntax.md)** - NASM-specific syntax
-- **[05-syscalls.md](https://github.com/arosenfeld2003/my_libasm/blob/dev/docs/05-syscalls.md)** - macOS system call details
-- **[06-thinking-in-assembly.md](https://github.com/arosenfeld2003/my_libasm/blob/dev/docs/06-thinking-in-assembly.md)** - The cognitive journey
+- **[00-index.md](https://github.com/arosenfeld2003/my_libasm/blob/main/docs/00-index.md)** - Project roadmap and function ordering
+- **[01-registers.md](https://github.com/arosenfeld2003/my_libasm/blob/main/docs/01-registers.md)** - Understanding CPU registers
+- **[02-calling-convention.md](https://github.com/arosenfeld2003/my_libasm/blob/main/docs/02-calling-convention.md)** - How function arguments work
+- **[03-instructions.md](https://github.com/arosenfeld2003/my_libasm/blob/main/docs/03-instructions.md)** - Common assembly operations
+- **[04-nasm-syntax.md](https://github.com/arosenfeld2003/my_libasm/blob/main/docs/04-nasm-syntax.md)** - NASM-specific syntax
+- **[05-syscalls.md](https://github.com/arosenfeld2003/my_libasm/blob/main/docs/05-syscalls.md)** - macOS system call details
+- **[06-thinking-in-assembly.md](https://github.com/arosenfeld2003/my_libasm/blob/main/docs/06-thinking-in-assembly.md)** - The cognitive journey
 
 The last document, "Thinking in Assembly," came directly from my struggle to write `strchr` independently. It includes:
 
@@ -177,7 +177,7 @@ The last document, "Thinking in Assembly," came directly from my struggle to wri
 
 ### Hand-Coding strchr
 
-My annotated attempt at writing `strchr` by hand ([docs/hand_code_strchr.asm](https://github.com/arosenfeld2003/my_libasm/blob/dev/docs/hand_code_strchr.asm)) captures the learning process:
+My annotated attempt at writing `strchr` by hand ([docs/hand_code_strchr.asm](https://github.com/arosenfeld2003/my_libasm/blob/main/docs/hand_code_strchr.asm)) captures the learning process:
 
 ```asm
 .loop:
