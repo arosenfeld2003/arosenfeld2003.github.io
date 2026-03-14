@@ -17,7 +17,7 @@ This session was an applied security review of a set of Python exercises from a 
 
 ### The Repository
 
-The project lives at `qwasar_mscs_25-26/03_14_26` and contains five paired files:
+The project lives at [arosenfeld2003/qwasar_dark_arts](https://github.com/arosenfeld2003/qwasar_dark_arts) and contains five paired files:
 
 | Source | Test | Attack class |
 |---|---|---|
