@@ -1,7 +1,7 @@
 ---
 title: "Four Python Exercises That Actually Teach DS/ML Fundamentals"
 date: 2026-04-11T09:00:00-08:00
-draft: true
+draft: false
 tags: ["python", "numpy", "machine-learning", "data-science", "descriptors", "generators", "context-managers"]
 category: "technical"
 summary: "A slow, deliberate walkthrough of four graduate DS/ML exercises — vectorized confusion matrices, Python descriptors, context managers, and lazy generator pipelines — with the emphasis on understanding over completion."
