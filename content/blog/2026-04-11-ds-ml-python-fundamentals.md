@@ -6,6 +6,7 @@ tags: ["python", "numpy", "machine-learning", "data-science", "descriptors", "ge
 category: "technical"
 summary: "A slow, deliberate walkthrough of four graduate DS/ML exercises — vectorized confusion matrices, Python descriptors, context managers, and lazy generator pipelines — with the emphasis on understanding over completion."
 ---
+Repository: https://github.com/arosenfeld2003/ml_ds_review
 
 This was a fun exploration of ML concepts. I spent the entire session studying the concept of a Confusion Matrix, which I hadn't encountered before. The other three exercises — descriptors, context managers, and lazy pipelines — were written by Claude for me to review, and since I'm more familiar with those concepts it was easier to do a quick read-through.
 
