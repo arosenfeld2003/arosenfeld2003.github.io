@@ -6,7 +6,7 @@ draft: false
 
 <div class="section">
   <div class="section-inner shadow-sm">
-    <h2 class="heading">Adjutant - MCP Server</h2>
+    <h2 class="heading">Adjutant: Calendar &amp; Email MCP Server</h2>
     <div class="item">
       <h3><a href="https://github.com/MarimerLLC/adjutant/pull/73" target="_blank">macOS Keychain &amp; M365 Scopes</a> <span class="badge badge-theme">Bug Fix</span></h3>
       <p class="summary">Wire up macOS Keychain token storage and make Microsoft 365 OAuth scopes configurable per account, fixing silent empty results for least-privilege app registrations.
