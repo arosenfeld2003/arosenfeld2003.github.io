@@ -7,7 +7,11 @@ category: "technical"
 summary: "Kicking off a remix of Stanford's CS146S: a Rust coding-agent harness that tries to spend fewer Claude tokens by offloading small jobs to tiny local models, starting with a security-first setup and some surprising CPU benchmarks."
 ---
 
-[Placeholder for Alex's reflections - please add your personal thoughts about this work session, what motivated it, challenges faced, or lessons learned before publishing]
+I've been meaning to get back to publicly documenting small coding projects, both as an effort to build community and to stay current in these crazy days of agentic coding. I had grand plans to do an AI safety/alignment hackathon this past weekend on agent swarms, but my plans were thwarted when I spent most of the weekend in bed recovering from a 24-hour flu. While lying around slightly feverish, I enjoyed hearing Mihail Eric on the most recent Latent Space podcast discuss his Modern Software Developer course at Stanford. I decided that it would be fun to use the publicly available course material as a way to get back to tackling some personal learning.
+
+To up the ante, I am building the coding harness in Rust and focusing on exploring local models — which I feel strongly about. Apropos of that, Anthropic released new models (Fable and Mythons 5.2) today, which supposedly can even build entire working operating systems from a simple one-shot prompt! If we accept the premise that writing code is now something that human software engineers will do only minimally by hand, it feels to me like running the inference locally is one way to maintain both control and security, which become paramount.
+
+There are lots of very smart people building in this space — but tackling this course with an emphasis on exploring both Rust (which should potentially help with verification) and local inference (security/privacy) felt like a fun and relatively painless way to start getting myself back into a regular rhythm of coding projects outside my professional working hours. Hopefully these posts will become regular (targeting 2–3 posts per week minimum) as I work through the course material.
 
 ## Technical Details
 
