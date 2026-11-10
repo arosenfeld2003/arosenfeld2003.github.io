@@ -1,7 +1,7 @@
 ---
 title: "CS146S Remix, Part 1: Reading Claude Code's and pi's Mail with mitmproxy"
 date: 2026-11-09T09:00:00-08:00
-draft: true
+draft: false
 tags: ["ai-engineering", "coding-agents", "mitmproxy", "prompt-caching", "claude-code", "pi", "security", "cs146s"]
 category: "technical"
 summary: "Putting a man-in-the-middle proxy between two coding agents and the Claude API: 18,000 tokens vs. 2,300 to say \"hi\", what changed in Claude Code's system prompt over 26 releases, and a redacting capture tool built so credentials never touch disk."
