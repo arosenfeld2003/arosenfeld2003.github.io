@@ -7,7 +7,9 @@ category: "technical"
 summary: "Putting a man-in-the-middle proxy between two coding agents and the Claude API: 18,000 tokens vs. 2,300 to say \"hi\", what changed in Claude Code's system prompt over 26 releases, and a redacting capture tool built so credentials never touch disk."
 ---
 
-[Placeholder for Alex's reflections - please add your personal thoughts about this work session, what motivated it, challenges faced, or lessons learned before publishing]
+Pretty fascinating to have Claude evaluate itself, then justify! I also upgraded Claude Code during this session... but the justification is probably pretty accurate.
+
+The entire point here is that maybe you don't ALWAYS need the bloat associated with Claude, ESPECIALLY if using local models and no tool calls. It feels like there's much potential to save a LOT of $$ by reducing the context window dramatically, focusing on local, and ONLY using the power of the frontier when we need it.
 
 ![Claude Code vs pi saying "hi": 20 HTTP requests vs 1, ~18.0k vs ~2.3k input tokens, 1h vs 5m cache, 17 vs 4 beta flags](/assets/images/blog/2026-11-09-cc-vs-pi-hello.png)
 
