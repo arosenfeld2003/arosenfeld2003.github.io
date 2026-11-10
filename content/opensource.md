@@ -9,7 +9,7 @@ draft: false
     <h2 class="heading">Adjutant: Calendar &amp; Email MCP Server</h2>
     <div class="item">
       <h3><a href="https://github.com/MarimerLLC/adjutant/pull/73" target="_blank">macOS Keychain &amp; M365 Scopes</a> <span class="badge badge-theme">Bug Fix</span></h3>
-      <p class="summary">Wire up macOS Keychain token storage and make Microsoft 365 OAuth scopes configurable per account, fixing silent empty results for least-privilege app registrations.
+      <p class="summary">Fixed issues blocking my own setup so I could actually use it: wired up macOS Keychain token storage and made Microsoft 365 OAuth scopes configurable per account, so least-privilege app registrations return real data instead of silently empty results.
         <a class="more-link" href="https://github.com/MarimerLLC/adjutant/pull/73/files" target="_blank">→ View Code</a>
       </p>
     </div>
