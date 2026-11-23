@@ -7,7 +7,11 @@ category: "technical"
 summary: "Claude Code and pi did the same coding task for $0.234 and $0.073. Then three progressively harder tasks failed to produce a single failure from Claude Code, plus what the traces revealed along the way: server-side threads, a hidden suggestion call, and 46 deferred tools."
 ---
 
-[Placeholder for Alex's reflections - please add your personal thoughts about this work session, what motivated it, challenges faced, or lessons learned before publishing]
+It's interesting evaluating Claude Code Harness while using Claude to write all of the code. Also things change so quickly that we had an update to Claude using Threads which actually changed what we see at the end of a request.
+
+There are clear tradeoffs between Pi (much cheaper!) and Claude (considerably higher token usage), but they could prove to even out as we progress (eg if we use more tokens earlier but catch more errors, ultimately it will save us tokens when working on large codebases with much higher context and more complex use cases)... looking forward to continuing the course.
+
+I need to decide on the best way to try and internalize all of this knowledge as well - outsourcing ALL the coding to Claude is quick but maybe I would benefit more by actually writing some of the code by hand. Had an interesting 'summary' session where I could review all the code with Claude, and this actually helped surface some bugs which we fixed (and will fix in future sessions).
 
 ## Technical Details
 
