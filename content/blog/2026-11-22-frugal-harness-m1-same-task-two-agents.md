@@ -1,7 +1,7 @@
 ---
 title: "CS146S Remix, Part 2: Same Task, Two Agents, and Failing to Make Claude Fail"
 date: 2026-11-22T09:00:00-08:00
-draft: true
+draft: false
 tags: ["ai-engineering", "coding-agents", "mitmproxy", "prompt-caching", "claude-code", "pi", "evals", "cs146s"]
 category: "technical"
 summary: "Claude Code and pi did the same coding task for $0.234 and $0.073. Then three progressively harder tasks failed to produce a single failure from Claude Code, plus what the traces revealed along the way: server-side threads, a hidden suggestion call, and 46 deferred tools."
